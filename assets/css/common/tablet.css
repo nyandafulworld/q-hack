@@ -1,0 +1,397 @@
+/* タブレット対応 tablet */
+@media (max-width: 1024px) {
+
+    /*************************** 01. 枠組共通 ***********************/
+    .tab-none {
+        display: none;
+    }
+
+    /*************************** 02. header（ヘッダー） ***********************/
+    /* Q HACK ヘッダー - タブレット */
+    .qhack-header__top-inner {
+        padding: 12px 16px;
+    }
+    .qhack-header__logo img {
+        height: 50px;
+    }
+    .qhack-header__desc {
+        font-size: 12px;
+    }
+    .qhack-header__nav {
+        display: none;
+    }
+    .qhack-cta-btn {
+        width: 200px;
+        padding: 10px 16px;
+    }
+    .qhack-cta-btn__sub {
+        font-size: 11px;
+    }
+    .qhack-cta-btn__main {
+        font-size: 13px;
+    }
+    .qhack-header__hamburger {
+        display: flex;
+    }
+    #body_wrap {
+        padding-top: 70px;
+    }
+    body.admin-bar #body_wrap {
+        padding-top: 102px; /* 70px + 32px */
+    }
+    
+    /* 既存SWELL用（非表示のため参考程度） */
+    .-img .c-headLogo__link{
+        padding:5px 0;
+    }
+    /*************************** 03. 共通パーツ ***********************/
+    .pc {
+        display: none;
+    }
+
+    .tablet {
+        display: inherit;
+    }
+
+    .sp {
+        display: inherit;
+    }
+
+    .concept {
+        flex-direction: column;
+    }
+
+    .concept .concept-left {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .concept .tit {
+        margin: 0 auto;
+    }
+
+    .concept .catchcopy {
+        font-size: 3.6rem;
+        text-align: center;
+    }
+
+    .concept .catchcopy br {
+        display: none;
+    }
+
+    .concept .concept-right {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .concept .concept-bg {
+        font-size: 6rem;
+    }
+
+    .concept .concept-right p br {
+        display: none;
+    }
+
+    ul.before-after li:first-child::after {
+        font-size: 12rem;
+    }
+
+    ul.fourColumns li {
+        width: 31.3333%;
+        margin: 1%;
+    }
+
+    ul.fiveColumns li {
+        width: 23%;
+        margin: 1%;
+    }
+
+    ul.sixColumns li {
+        width: 23%;
+        margin: 1%;
+    }
+
+    .flex-container-three>* {
+        width: 48%;
+    }
+
+    .flex-container-four>* {
+        width: 31.3333%;
+    }
+
+    div.flow-ol-container ol {
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(to bottom, #f0f2f4, #999);
+    }
+
+    div.flow-ol-container ol li {
+        width: 100%;
+        padding: 30px 0;
+        background: url(../images/icons/flow-bottom-start.svg) no-repeat center bottom, url(../images/icons/flow-bottom-end.svg) no-repeat center top;
+        background-size: 160px auto;
+    }
+
+    div.flow-ol-container ol li:last-child {
+        background: url(../images/icons/flow-bottom-end.svg) no-repeat center top;
+        background-size: 160px auto;
+        border: none;
+    }
+
+    div.flow-ol-container ol li:first-child {
+        background: url(../images/icons/flow-bottom-start.svg) no-repeat center bottom;
+        background-size: 160px auto;
+    }
+
+    div.flow-ol-container ol li::before {
+        counter-increment: flow-list;
+        content: counter(flow-list);
+        display: block;
+        font-size: 4.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .flow-section-container section {
+        width: calc(50% + 6rem);
+    }
+
+    .flow-section-container section:nth-child(odd) {
+        margin-left: calc(50% - 6rem);
+    }
+
+    .flow-section-container h3::before {
+        width: 3rem;
+        padding: 0.3rem 0;
+        color: #fff;
+        margin-right: 0.3rem;
+    }
+
+    .flow-section-container div.img {
+        width: 12rem;
+    }
+    .year::before {
+        top: 0;
+        left: 7.8rem;
+        width: 6px;
+        height: 100%;
+    }
+
+    .year>ul {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    .year>ul>li {
+        flex-direction: row;
+    }
+
+    .year>ul>li+li {
+        margin: 1.5rem 0;
+    }
+
+    .year-time::before {
+        right: 0;
+        left: auto;
+        bottom: auto;
+        top: 50%;
+        transform: translateX(50%) translateY(-50%) rotate(45deg);
+    }
+
+    .year-time::after {
+        top: 50%;
+        left: auto;
+        bottom: auto;
+        right: -3rem;
+        transform: translateY(-50%);
+    }
+
+    .year-container {
+        padding-left: 4rem;
+        padding-top: 0rem;
+    }
+
+    .year-container ul {
+        flex-direction: column;
+    }
+
+    .year-container li {
+        margin: 0.5rem 0 0.6rem;
+        -ms-writing-mode: inherit;
+        writing-mode: inherit;
+        text-orientation: inherit;
+    }
+
+    .year-container li span {
+        -webkit-text-combine: inherit;
+        -ms-text-combine-horizontal: inherit;
+        text-combine-upright: inherit;
+    }
+
+
+    .deputy1 .right {
+        margin-right: 2.4rem;
+    }
+
+    .deputy2 .philosophy-txt {
+        margin-bottom: 3.2rem;
+    }
+
+    .deputy3-container {
+        flex-direction: column;
+    }
+
+    .deputy3 .left {
+        width: 100%;
+    }
+
+    .deputy3 .lead {
+        margin-bottom: 3.2rem;
+        line-height: 1.4;
+    }
+
+    .deputy3 .txt {
+        line-height: 2.4;
+    }
+
+    .deputy3 .name {
+        margin-top: 2.4rem;
+    }
+
+    .deputy3 .right {
+        width: 100%;
+        margin: 4.8rem 0 0;
+    }
+
+    .deputy3 .right .img {
+        display: flex;
+        justify-content: center;
+        justify-content: flex-end;
+    }
+
+    .deputy4 {
+        padding: 12rem 2.4rem 2.4rem;
+    }
+
+    .deputy4::before {
+        font-size: 7.2rem;
+        top: 2.4rem;
+        left: 2.4rem;
+        z-index: 0;
+    }
+
+    .deputy4 .philosophy-txt {
+        font-size: 2.4rem;
+    }
+
+    .deputy4 .name {
+        font-size: 1.8rem;
+        margin-top: 1.6rem;
+    }
+
+    .deputy4-container {
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .deputy4-container>* {
+        width: 100%;
+    }
+
+    .deputy4-container .img {
+        margin: 0 0 2.4rem;
+        text-align: center;
+    }
+
+
+    .catch1 {
+        max-width: 720px;
+    }
+
+    .catch1 p {
+        font-size: 3.2rem;
+    }
+
+    .catch2 {
+        max-width: 720px;
+    }
+
+    .catch2 p {
+        font-size: 3.2rem;
+    }
+
+
+    .st1 {
+        max-width: 500px;
+    }
+
+    .st1 p {
+        font-size: 3.2rem;
+        line-height: 8.8rem;
+    }
+
+    .st1 p span::before,
+    .st1 p span::after {
+        width: 12px;
+    }
+
+    .st2 {
+        max-width: 500px;
+    }
+
+    .st2 p {
+        font-size: 3.2rem;
+        line-height: 8.8rem;
+    }
+
+    .st3 p {
+        font-size: 3.2rem;
+        line-height: 8.8rem;
+    }
+
+    /*************************** 04. breadcrumb（パンくず） ***********************/
+    /*************************** 05. aside（サイドバー） ***********************/
+    /*************************** 06. footer（フッター） ***********************/
+    /* Q HACK フッター - タブレット */
+    .qhack-footer__inner {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+    .qhack-footer__main {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .qhack-footer__logo img {
+        width: 150px;
+        height: auto;
+    }
+    .qhack-footer__nav {
+        justify-content: center;
+    }
+    .qhack-footer__menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px 40px;
+    }
+    .qhack-footer__bottom {
+        margin-top: 20px;
+        gap: 8px;
+    }
+    .qhack-footer__privacy,
+    .qhack-footer__copyright {
+        font-size: 13px;
+    }
+    
+    /* 既存SWELL用 */
+    .l-footer {
+        z-index: 5;
+    }
+
+    .footer-top::before {
+        display: none;
+    }
+
+    .footer-box h3 {
+        font-size: 30px;
+    }
+}

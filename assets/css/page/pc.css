@@ -1,0 +1,174 @@
+@media screen and (max-width:1400px){
+/*************************** 01. 固定ページのh1,h2見出し *******************/
+/*************************** 02. toppage ***********************/
+/* Q HACK メインビジュアル - PC */
+.qhack-mv {
+    padding: 60px 0 50px;
+}
+.qhack-mv__title {
+    font-size: 3.6rem;
+}
+.qhack-mv__subtitle {
+    font-size: 1.6rem;
+}
+.qhack-mv__image {
+    max-width: 550px;
+}
+
+/* 既存BIRDY用 */
+.copy-01{
+    font-size: 34px;
+}
+.copy-02{
+    font-size: 46px;
+}
+.cta-box-consulting{
+    flex-direction: column;
+    padding: 30px;
+    padding-right: 60px;
+}
+.cta-box-text{
+    width:100%;
+}
+.cta-box-consulting-btn{
+    width:100%;
+}
+.cta-box-toriya{
+    right: 1%;
+    top:-359px;
+}
+.top-05-achievement h3{
+    font-size: 2.2rem;
+}
+.top-05-achievement-text span.large{
+    font-size: 2.2rem;
+}
+/*************************** 03. form  ***********************/
+/*************************** 04. 下層ページ  ***********************/
+.area-fv-left .text01{
+    font-size:24px;
+}
+.area-fv-left .text02 strong{
+    font-size: 50px;
+}
+.area-fv-left .text02{
+    font-size: 32px;
+}
+.area-fv-left .text02 span.white{
+    font-size: 30px;
+}
+.area-fv .area-fv-btn.download:before{
+    left: 8%;
+}
+.area-fv-btn.download a{
+    padding-left: 40%;
+}
+.area-fv-left .text03{
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 1280px) {
+    .pc-large-only{
+        display: none!important;
+    }
+    .fixbox{
+        width:98%;
+    }
+    .fixbox-narrow{
+        width:98%;
+    }
+    .area-fv-left{
+        width:50%;
+    }
+    .area-fv-right{
+        width:49%;
+    }
+    .area-fv-right-point li{
+        width:48%;
+        margin-bottom: 10px;
+    }
+    .area-fv .area-fv-btn.download:before{
+        width:125px;
+        top: 50%;
+        left: 4%;
+    }
+    .area-fv-btn.download:before{
+        width:125px;
+        top: 50%;
+        left: 4%;
+    }
+    .area-fv-btn.download a{
+        padding-left: 33%;
+    }
+    h1{
+        font-size: 44px;
+    }
+    h1 span.birdy{
+        font-size: 68px;
+    }
+    h1 span.area-name{
+        margin-bottom: 10px;
+    }
+    h2.ttl01{
+        font-size:28px;
+    }
+    .area-local-container-inner{
+        padding:40px;
+    }
+    .area-local-container-inner p strong{
+        font-size: 24px;
+    }
+    .area-local-container-inner:after{
+        width:290px;
+        height: 320px;
+    }
+    .area-local-container{
+        margin-top: 80px;
+    }
+    .area-local-container-inner p{
+        margin-bottom: 30px;
+    }
+    .area-local h3{
+        font-size: 24px;
+    }
+    .area-mychannel .iframe-content{
+        width:49%;
+    }
+    .area-failure h2{
+        font-size: 28px;
+    }
+    .area-cause-card{
+        padding:40px;
+    }
+    .area-point-box h3{
+        font-size: 22px;
+    }
+    .area-specific-box{
+        padding: 40px;
+    }
+    .area-merit-heading-text{
+        font-size: 50px;
+    }
+    .area-merit-item{
+        padding-left: 30px;
+    }
+    .area-result-box .text p{
+        margin-top: 0;
+    }
+    .area-result-box{
+        padding: 20px;
+    }
+    .area-industry{
+        padding: 50px 0;
+    }
+    .area-customer .heading-box h2{
+        font-size:28px;
+    }
+    .area-faq-box dt{
+        font-size: 20px;
+    }
+    p.gra{
+        font-size: 26px;
+    }
+}

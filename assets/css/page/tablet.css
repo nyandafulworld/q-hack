@@ -1,0 +1,386 @@
+@media screen and (max-width:1024px) {
+/*************************** 01. 固定ページのh1,h2見出し *******************/
+/*************************** 02. toppage ***********************/
+/* Q HACK メインビジュアル - タブレット */
+.qhack-mv {
+    padding: 30px 0 60px;
+}
+.qhack-mv__inner {
+    flex-direction: column;
+    gap: 30px;
+}
+.qhack-mv__content {
+    max-width: 100%;
+    text-align: left;
+}
+.qhack-mv__label {
+    font-size: 24px;
+    text-align: left;
+}
+.qhack-mv__title {
+    font-size: 32px;
+    line-height: 48px;
+    text-align: left !important;
+    color: #313131 !important;
+    -webkit-text-fill-color: #313131 !important;
+}
+.qhack-mv__subtitle {
+    font-size: 15px;
+    text-align: left;
+}
+.qhack-mv__cta {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.qhack-mv__badges {
+    justify-content: flex-start;
+}
+.qhack-mv__badge {
+    width: 150px;
+    height: 95px;
+}
+.qhack-mv__badge-img {
+    width: 150px;
+}
+.qhack-mv__badge-label {
+    font-size: 11px;
+}
+.qhack-mv__badge-value {
+    font-size: 11px;
+}
+.qhack-mv__badge-number {
+    font-size: 22px;
+}
+.qhack-mv__badge-label {
+    font-size: 15px;
+}
+.qhack-mv__badge-number {
+    font-size: 28px;
+}
+.qhack-mv__image {
+    max-width: 100%;
+    order: -1;
+}
+
+/* 既存BIRDY用 */
+.mv-inner{
+	flex-direction: column-reverse;
+}
+.mv-text{
+	width: 100%;
+	max-width: initial;
+}
+.mv-img{
+	display: none;
+	width:90%;
+}
+.mv-img-sp{
+	display: block;
+	width:86%;
+}
+.mv-inner:after{
+	top: 30%;
+}
+.copy-01{
+	font-size: 30px;
+}
+.copy-02{
+	margin-bottom: 0;
+	font-size:3.8rem;
+}
+.top-01 p{
+	font-size:2rem;
+}
+.top-01 p strong{
+	font-size: 3.4rem;
+}
+.top-02 h1 span.gra{
+	font-size: 3.2rem;
+}
+#top h1{
+	font-size: 4rem;
+}
+.top-02 h1 span.birdy{
+	font-size:6rem;
+}
+.top-02 p{
+	font-size:1.8rem;
+}
+.top h2.ttl01{
+	font-size:3rem;
+}
+.top h2.ttl01 span{
+	font-size: 4.6rem;
+}
+.cta-box{
+	padding:40px 20px;
+}
+.cta-box-consulting-btn .copy{
+	font-size: 32px;
+}
+.cta-box-toriya{
+	width: 212px;
+	top:-272px;
+}
+.top-04-box{
+	justify-content: center;
+}
+.top-04-box li{
+	width: 48%;
+	max-width: 300px;
+}
+.top-06-box-item-inner h3{
+	font-size: 2rem;
+}
+.top-08-box{
+	padding:3rem;
+}
+.top-08-img{
+	width:40%;
+	transform: initial;
+}
+.top-08-name{
+	width:50%;
+}
+.top-08-copy{
+	margin-left: auto;
+	text-align: center;
+	width: 100%;
+	padding: 5rem 0;
+}
+/*************************** 03. form  ***********************/
+/*************************** 04. 下層ページ  ***********************/
+.prefecture{
+    padding-bottom: 50px;
+}
+.pc{
+    display: none!important;
+}
+.sp{
+    display: inherit;
+}
+.area-fv-left{
+    width:100%;
+}
+.area-fv-right{
+    width:100%;
+}
+.area-fv-left .text02 strong{
+    width:max-content;
+    text-align: left;
+    font-size: 42px;
+}
+.area-fv-right-point li{
+    width:23%;
+}
+.flex-container-two > .area-fv-btn{
+    width:100%;
+    margin-bottom: 6px;
+}
+.area-fv-btn.download{
+    margin-top: 20px;
+}
+.area-fv-right-point li{
+    font-size: 13px;
+}
+.area-fv-left .text03{
+    margin-bottom: 20px;
+}
+.area-fv-btn a{
+    padding: 16px 30px;
+}
+.area-logo-list li{
+    width:33%;
+}
+h1{
+    font-size: 28px;
+}
+h1 span.gra{
+    text-align: left;
+    font-size: 22px;
+    transform: initial;
+}
+h1 span.area-name{
+    font-size: 22px;
+}
+h1 span.area-name{
+    margin-bottom: 4px;
+}
+h1 span.birdy{
+    font-size: 48px;
+    line-height: 1;
+}
+h2.ttl01{
+    font-size:24px;
+    text-align: left;
+    padding-left: 10px;
+}
+h2.ttl01.center{
+    text-align: center;
+}
+ul.sixColumns li{
+    width:23%;
+}
+.area-support-box{
+    margin-top: 10px!important;
+}
+.area-support-box li{
+    font-size: 14px;
+}
+.area-local-container{
+    margin-top: 30px;
+}
+.area-local-container-inner p strong{
+    font-size:20px;
+}
+.area-local-container-inner p{
+    font-size: 16px;
+    margin-top: 0;
+}
+.area-local-container-inner{
+    padding-bottom: 124px;
+    padding-left: 20px;
+}
+.area-local-container-inner:after {
+    width: 224px;
+    height: 246px;
+}
+.area-local-container-inner .text02{
+    width:64%;
+}
+.area-local h3{
+    margin-top: 0;
+}
+.city-list{
+    padding: 14px;
+    gap:6px;
+}
+.city-list li{
+    font-size: 14px;
+}
+.city-list li a{
+    font-size: 14px;
+    padding: 5px;
+}
+.area-local h3{
+    font-size: 22px;
+}
+.area-achievement-box{
+    width:100%;
+    padding-bottom: 30px;
+}
+.area-achievement-box h3{
+    width:100%;
+    font-size: 20px;
+}
+.area-achievement-box figure{
+    width:100%;
+}
+.area-achievement-box.pt2{
+    transform: initial;
+}
+.area-achievement-box.pt3{
+    transform: initial;
+}
+.area-failure h2 span{
+    left: initial;
+}
+.area-failure h2{
+    font-size: 24px;
+}
+.area-failure-box p{
+    font-size: 14px;
+}
+.area-failure-pattern-list:before,.area-failure-pattern-list:after{
+    display: none;
+}
+.area-failure:after {
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    border-top: 60px solid #108974;
+    bottom: -30px;
+}
+.area-failure-pattern-list{
+    width:98%;
+}
+.area-cause-card{
+    padding: 40px 20px;
+}
+.area-cause-card h3{
+    font-size: 20px;
+}
+.area-cause-card h3 span{
+    font-size: 22px;
+    width:40px;
+    height:40px;
+}
+.area-cause:after{
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    border-top: 60px solid #108974;
+    bottom: -30px;
+}
+.area-cause-card ul.listing li{
+    font-size: 16px;
+}
+.area-cause-card p{
+    font-size: 16px;
+}
+h2.ttl02 .gra{
+    font-size: 22px;
+}
+h2.ttl02{
+    font-size: 40px;
+}
+h2.ttl02 .number{
+    font-size: 90px;
+    line-height: 0.8;
+}
+h2.ttl02 .ttl02-01{
+    padding-left: 0;
+    transform: initial;
+}
+h2.ttl02 .gra{
+    display: initial;
+}
+.area-data-card ul.listing li{
+    font-size: 16px;
+}
+.area-merit-heading-text{
+    font-size: 36px;
+}
+.area-merit-heading-number{
+    font-size: 86px;
+}
+.area-merit-sub{
+    font-size: 28px;
+}
+.area-merit-item-heading{
+    font-size: 22px;
+}
+.area-merit-item-sub{
+    font-size: 20px;
+}
+.area-merit-item-number{
+    font-size: 34px;
+}
+.area-customer .heading-box h2{
+    font-size: 24px;
+}
+.area-faq-box dt{
+    font-size: 18px;
+}
+.area-faq-box dd{
+    font-size: 16px;
+}
+p.gra{
+    font-size: 24px;
+}
+.area-result-box{
+    padding: 10px;
+}
+.area-customer-box .text-box p{
+    font-size: 16px;
+}
+}

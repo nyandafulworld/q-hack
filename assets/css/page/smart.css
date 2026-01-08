@@ -1,0 +1,752 @@
+@media screen and (max-width: 768px) {
+
+/*************************** 01. 固定ページのh1,h2見出し *******************/
+#top h1{
+    line-height: 2;
+    text-align: center;
+}
+.area-page h1{
+    text-align: center;
+}
+h2{
+    padding-bottom: 0;
+}
+.top h2.ttl01{
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+.top h2.ttl01 span{
+    font-size:2.6rem;
+}
+.fixbox{
+    width:96%;
+}
+h2.ttl03{
+    font-size:1.6rem;
+    line-height: 1.6;
+}
+h2.ttl03 span{
+    font-size:3rem;
+    line-height: 1;
+}
+/*************************** 02. toppage ***********************/
+/* Q HACK メインビジュアル - スマホ */
+.qhack-mv {
+    padding: 20px 0 50px;
+}
+.qhack-mv__inner {
+    flex-direction: column;
+    gap: 24px;
+}
+.qhack-mv__content {
+    max-width: 100%;
+    text-align: left;
+}
+.qhack-mv__label {
+    font-size: 18px;
+    text-align: left;
+}
+.qhack-mv__title {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left !important;
+    color: #313131 !important;
+    -webkit-text-fill-color: #313131 !important;
+}
+.qhack-mv__subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+.qhack-mv__cta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.qhack-mv__cta .qhack-cta-btn {
+    width: auto;
+    max-width: none;
+    padding: 8px 20px;
+}
+.qhack-mv__cta .qhack-cta-btn__sub {
+    font-size: 10px;
+}
+.qhack-mv__cta .qhack-cta-btn__main {
+    font-size: 13px;
+}
+.qhack-mv__badges {
+    justify-content: flex-start;
+    gap: 12px;
+}
+.qhack-mv__badges {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.qhack-mv__badge {
+    width: 100px;
+    height: 70px;
+}
+.qhack-mv__badge-img {
+    width: 100px;
+}
+.qhack-mv__badge-label {
+    font-size: 9px;
+}
+.qhack-mv__badge-value {
+    font-size: 9px;
+}
+.qhack-mv__badge-number {
+    font-size: 18px;
+}
+.qhack-mv__badge-label {
+    font-size: 12px;
+}
+.qhack-mv__badge-value {
+    font-size: 12px;
+}
+.qhack-mv__badge-number {
+    font-size: 20px;
+}
+.qhack-btn--large {
+    padding: 14px 28px;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+.qhack-mv__image {
+    max-width: 100%;
+    order: -1;
+}
+
+/* 既存BIRDY用 */
+.mv{
+    background: linear-gradient(#fff 20% ,#81C5AE);
+}
+.mv-text{
+    text-align: center;
+}
+.copy-01{
+    font-size:2.6rem;
+    padding:6px 22px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.copy-02{
+    font-size: 3rem;
+    text-align: center;
+}
+.mv-img-sp{
+    width:96%;
+    transform: translateY(-20px);
+}
+.mv-inner:after{
+    width: 400px;
+    top:31%;
+}
+.mv-achievements{
+    flex-wrap: wrap;
+    transform: translateY(-16px);
+    margin-bottom: 0px;
+}
+.mv-achievements li{
+    width:32%;
+}
+.mv-achievements li.sp-none{
+    display: none;
+}
+.mv-btns{
+    flex-wrap: wrap;
+}
+.mv-btn{
+    width:100%;
+}
+.mv-text{
+    padding-top: 20px;
+}
+.copy-02 br.pc{
+    display: initial!important;
+}
+.top-01 p{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.top-01 p strong{
+    font-size: 2.2rem;
+}
+.top-02 h1 span.gra{
+    font-size: 2rem;
+    line-height: 1.4;
+}
+#top h1{
+    font-size: 2.8rem;
+}
+.top-02{
+    padding-top: 2rem;
+}
+.top-02 h1 span.birdy{
+    font-size: 4rem;
+}
+.top-02 p{
+    font-size:1.6rem;
+}
+.top-03{
+    padding-top: 0px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+.top-04{
+    margin-top: 20px;
+}
+.top-04-box li {
+    font-size:12px;
+}
+.top-04-box li span.number{
+    font-size: 3rem;
+}
+.top-04-box li span.year{
+    font-size:18px;
+}
+.top-09 h3{
+    font-size:1.4rem;
+    margin-bottom: 1.2rem;
+    padding-left: 26px;
+}
+.top-09 h3:before{
+    width:20px;
+}
+.top .area-mychannel{
+    padding-top: 0;
+}
+.top .area-mychannel p{
+    font-size: 1.4rem;
+}
+.cta-box{
+    padding:30px 6px;
+}
+.cta-box-toriya{
+    display: none;
+}
+.cta-box-consulting{
+    width:100%;
+    padding:16px;
+}
+.cta-box-text{
+    font-size:1.8rem; 
+}
+.cta-box-consulting-btn .copy{
+    font-size:2rem;
+    padding: 6px 0;
+    margin-bottom: 15px;
+}
+.top-05{
+    margin-top: 20px;
+}
+.top-05-achievement-item{
+    width:100%;
+}
+.top-05-achievement h3{
+    font-size: 1.8rem;
+}
+.top-05-achievement-text span.large{
+    font-size:2rem;
+}
+.top-06-box {
+    flex-wrap: nowrap; /* 折り返さない */
+    overflow-x: auto;  /* 横スクロール有効化 */
+    -webkit-overflow-scrolling: touch; /* スマホでスムーズスクロール */
+    padding-bottom: 10px; /* スクロールバー分の余白 */
+}
+.top-06-box-item .number{
+    font-size: 2.4rem;
+    padding: 1.3rem 1rem 0.8rem;
+    width: 62px;
+    transform: translateY(-18px);
+    margin-bottom: -16px;
+}
+.top-06-box .top-06-box-item {
+    min-width: 240px; /* 横幅固定（カード1つ分の幅） */
+    flex: 0 0 auto;   /* 縮まない */
+    margin-right: 32px; /* カード間余白 */
+    margin-top: 20px;
+}
+
+/* 最後の要素の右余白をゼロにする */
+.top-06-box .top-06-box-item:last-child {
+    margin-right: 0;
+}
+.top-06-box-item:before{
+    left:-12%;
+}
+.top-08{
+    padding-top: 0;
+    padding-bottom: 5rem;
+}
+.top-08 p{
+    font-size: 1.4rem;
+}
+.top-08-box{   
+    padding: 2rem 1.8rem;
+}
+.top-08-name{
+    margin-left: 2rem;
+    font-size: 1.8rem;
+}
+.top-08-name span{
+    font-size: 2.2rem;
+}
+.top-08 p.top-08-copy{
+    font-size: 2.2rem;
+    padding: 3rem 0;
+}
+.top-08-box ul li{
+    font-size: 1.4rem;
+}
+.top-news{
+    padding-top: 5rem;
+}
+.top-news dl.table dt{
+    width:100%;
+    border-bottom: none;
+}
+.top-news dl.table dd{
+    width:100%;
+    padding-top: 0;
+}
+.top-news dl.table dt span.cat{
+    font-size: 1.2rem;
+}
+.footer-cta-box ul li:last-of-type{
+    display: none;
+}
+.footer-cta-box ul li{
+    width:100%;
+    padding:2px 8px;
+}
+.l-content{
+    margin-bottom: 4em;
+}
+/*************************** 03. form  ***********************/
+.inquiry-box .form-inner {
+    margin: 18% auto 0;
+    width: 100%;
+}
+.inquiry-box .form-inner .contact-form{
+    padding: 5% 0.5%;
+    background: #fff;
+}
+.inquiry-box .form-inner .contact-form .input-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.inquiry-box .form-inner .contact-form .input-box:not(:first-child) {
+    margin-top: 6.7%;
+}
+.inquiry-box .form-inner .contact-form .input-box .label-area {
+    padding: 6px 0;
+    width: 100%;
+    font-size: 1.6rem;
+}
+.inquiry-box .form-inner .contact-form .input-box .input-area {
+    width: 100%;
+}
+.inquiry-box .form-inner .contact-form .input-box .input-area input {
+    padding: 13px 18px;
+}
+.inquiry-box .form-inner .contact-form .input-box .input-area textarea {
+    padding: 13px 18px;
+    height: 160px;
+}
+.inquiry-box .form-inner .contact-form .input-box .input-area .input-error {
+    padding: 0 18px;
+    bottom: -20px;
+    font-size: 1.1rem;
+}
+.inquiry-box .form-inner .contact-form .action-box {
+    margin-top: 9%;
+}
+.inquiry-box .form-inner .note {
+    margin-top: 10%;
+}
+.inquiry-box .form-inner .note small {
+    font-size: 1.2rem;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+.inquiry-box .form-inner .contact-form .input-box .label-area {
+    float: none;
+    line-height: 1.6;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+form span.required,
+form span.will{
+    margin-left:5px;
+    margin-right: 0;
+}
+/*************************** 04. 下層ページ  ***********************/
+div.leftImg .img,
+div.rightImg .img{
+    float: inherit;
+    margin:0 auto 1rem;
+    width: 90%;
+}
+h2.ttl01{
+    width:98%;
+    font-size: 20px;
+}
+.area-fv-left .text01{
+    font-size: 18px;
+    display: none;
+}
+.area-fv-left .text01 span{
+    font-size: 28px;
+}
+.area-fv-left .text02{
+    font-size: 18px;
+    text-align: center;
+}
+.area-fv-left .text02 strong{
+    font-size: 26px;
+}
+.area-fv-left .text02 span.white{
+    font-size: 18px;
+}
+.area-fv-left .text03{
+    margin-top: 40px;
+}
+.area-fv-right-img{
+    margin-top: 18px;
+}
+.area-fv-right-point{
+    margin-top: 0px;
+}
+.area-fv-right-point li{
+    width:48%;
+}
+.area-fv{
+    padding-top: 16px;
+}
+.area-fv-btn.download a{
+    padding-left: 5%;
+}
+.city .area-01{
+    padding-bottom: 20px;
+}
+.area-fv .area-fv-btn.download:before{
+    left: initial;
+    width:96px;
+    right: 2%;
+}
+ .area-fv-btn.download:before{
+    left: initial;
+    width:96px;
+    right: 2%;
+}
+.area-fv-btn a{
+    font-size: 18px;
+}
+.area-fv-btn a span.sub{
+    font-size: 14px;
+}
+.c-pageTitle{
+    font-size:22px;
+}
+h1 span.gra{
+    font-size: 20px;
+}
+h1 span.birdy{
+    font-size: 38px;
+}
+.area-logo-list{
+    margin-top: 20px;
+}
+.area-support-box{
+    padding-left: 0!important;
+}
+.area-support-box li{
+    font-size: 10px;
+}
+.area-support-box li img{
+    margin-bottom: 2px;
+}
+.area-local-container-inner{
+    padding: 20px;
+    padding-bottom: 250px;
+}
+.area-local-container-inner p strong{
+    font-size: 18px;
+}
+.area-local-container-inner:after {
+    width: 202px;
+    height: 256px;
+    background:url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/area/area-toriya.png) center no-repeat;
+    background-size: contain;
+}
+.area-local-container-inner .text02{
+    width:100%;
+}
+.area-local-container-inner:before{
+    left: -2%;
+    width:110vw;
+}
+.area-local h3{
+    font-size: 18px;
+}
+.area-achievement-box{
+    padding-top: 10px;
+}
+.area-achievement-box h3{
+    font-size: 18px;
+    padding:10px 20px;
+}
+.area-mychannel{
+    padding-top: 20px;
+}
+.area-mychannel .iframe-content{
+    width: 48%;
+}
+.area-mychannel p{
+    font-size: 16px;
+}
+.area-failure h2{
+    font-size: 18px;
+}
+.area-failure{
+    border-radius: 20px;
+}
+.area-failure h2 span{
+    top:-67px;
+}
+.area-failure h2{
+    margin-bottom: 30px;
+}
+.area-failure-box .d_flex > *{
+    width:100%;
+}
+.area-failure-box .d_flex > figure{
+    text-align: center;
+}
+.area-failure-box .d_flex > figure img{
+    width:60%;
+}
+.area-failure-pattern{
+    border-radius: 20px;
+    margin-top:20px; 
+}
+.area-failure-pattern h3{
+    font-size: 18px;
+    padding-left: 20px;
+}
+.area-failure-pattern h3:before{
+    width:28px;
+    left: -12px;
+}
+.area-failure-pattern-list li{
+    font-size: 16px;
+}
+.area-cause{
+    padding-top: 20px;
+}
+.area-failure:after,.area-cause:after {
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-top: 30px solid #108974;
+    bottom: -30px;
+}
+h2.ttl01 span{
+    width:100%;
+    padding: 8px 8px;
+}
+.area-cause-card h3{
+    font-size: 18px;
+}
+.area-cause-card{
+    padding: 30px 10px;
+    margin-top: 10px;
+}
+.area-cause{
+    padding-bottom: 20px;
+}
+.area-point h2.ttl02 .gra{
+    display: none;
+}
+.area-point.bg-white{
+    padding-top: 0;
+}
+h2.ttl02{
+    font-size: 22px;
+}
+h2.ttl02 .ttl02-01{
+    font-size: 24px;
+}
+h2.ttl02 .number{
+    font-size: 50px;
+}
+
+.area-point-box{
+    flex-direction: column-reverse;
+}
+.area-point-box.right{
+    flex-direction: initial;
+}       
+.area-point-box .text{
+    width:100%;
+}
+.area-point-box .img{
+    width:100%;
+}
+.area-point-box h3{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.area-point-box h3 span.number{
+    font-size: 32px;
+}
+.area-point-box p{
+    margin-top: 0;
+}
+.attach{
+    font-size: 18px;
+}
+.area-data-card{
+    padding: 30px 10px;
+}
+.area-data-card h3{
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+}
+.area-specific{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.area-specific-box{
+    padding: 30px 10px;
+}
+.area-specific h2.ttl01 span{
+    font-size: 18px;
+}
+.area-specific h2.ttl01{
+    padding-left: 0;
+}
+.area-specific-box p{
+    font-size: 14px;
+}
+.area-merit{
+    padding-top:0;
+    padding-bottom: 0;
+}
+.area-merit-content{
+    margin-top: 40px;
+}
+.area-merit-header-copy{
+    font-size: 18px;
+}
+.area-merit-sub{
+    font-size: 18px;
+}
+.area-merit-heading-text{
+    font-size: 24px;
+}
+.area-merit-heading-number{
+    font-size: 40px;
+}
+.area-merit-item{
+    padding: 30px 10px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+.area-merit-item-image-wrapper{
+    width:100%;
+}
+.area-merit-item-heading{
+    font-size: 18px;
+}
+.flex-container-two.sp-one > *{
+    width:100%;
+}
+.area-result-box .flex-container-two .iframe-content{
+    width:100%;
+    padding: 28% 0;
+}
+.area-result-case-card dl.table dd{
+    width:100%;
+}
+.area-result-case-card dl.table dt{
+    width:100%;
+    padding-bottom: 4px;
+}
+h2.ttl01{
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+.area-result-box{
+    padding: 30px 10px;
+}
+.area-result-box .text p{
+    font-size: 16px;
+}
+.area-result-box h3{
+    width: 100%;
+    font-size: 18px;
+}
+.area-result-case-card{
+    width:100%!important;
+}
+.area-result-case-card h4{
+    font-size: 18px;
+}
+.area-industry{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.area-industry .list-flex li{
+    font-size: 16px;
+}
+.area-customer-box-top figure{
+    width:100%;
+}
+.area-customer-box-top .right{
+    width:100%;
+}
+.area-customer .iframe-content{
+    padding: 56% 0 0 0;
+}
+.area-customer .heading-box h2{
+    margin-bottom: 30px;
+}
+.area-customer-box .text-box{
+    padding: 10px 20px;
+}
+.area-customer-box .text-box p strong{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+p.gra{
+    font-size: 20px;
+    text-align: left;
+}
+.area-local-container .name{
+    left: 3%;
+    font-size: 14px;
+}
+.download-left{
+        padding:30px 20px 40px;
+    }  
+    .download-left,
+    .download-right {
+        max-width: 100%;
+    }
+}

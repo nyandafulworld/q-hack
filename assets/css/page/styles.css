@@ -1,0 +1,2341 @@
+@charset 'UTF-8';
+
+/*
+css
+　 ├ style.css--------：WEB 1,400px以上
+　 ├ pc.css-----------：WEB 1,399px以下、1,025以上
+　 ├ tablet.css-------：WEB 1,024以下、601px以上
+　 └ smart.css--------：WEB 600px以下
+*/
+
+/* css記載順序
+01. 固定ページのh1,h2見出し
+02. toppage
+03. form
+04. 下層ページ
+end css記載順序*/
+
+/*************************** 01. 固定ページのh1,h2見出し *******************/
+h1 {
+	font-size: 3.2rem;
+	line-height: 1.6;
+	letter-spacing: 2px;
+	color: #000;
+    font-weight: bold;
+}
+.page-head h1{
+	color:#fff;
+}
+
+#top h1{
+	line-height: 5.4rem;
+	margin-bottom: 2.0rem;
+    font-size: 5rem;
+    color:#00885A;
+    text-align: center;
+    margin-top: 3rem;
+}
+h1 span.birdy{
+    font-size:87px;
+    color:#00885A;
+    font-weight: bold;
+    line-height: 0.6;
+}
+h1 span.area-name{
+    font-size:87px;
+    color:#00885A;
+    font-weight: bold;
+    font-size: 32px;
+    display: block;
+    position: relative;
+    width: max-content;
+    padding:10px 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 span.area-name:before{
+    content:"\\";
+    display: inline-block;
+    margin-right: 10px;
+}
+h1 span.area-name:after{
+    content:"/";
+    display: inline-block;
+    margin-left: 10px;
+}
+h1 span.gra{
+    background-image: linear-gradient(90deg, #00885A, #0C4BA2);
+    color: #fff;
+    padding: 6px 16px;
+    margin-right:10px;
+    display: inline-block;
+    transform: translateY(-14px);
+    font-size: 30px;
+}
+h1 span.gra:first-of-type{
+    display: block;
+}
+h2 {
+    color: #333;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    font-size: 3rem;
+    line-height: 1;
+    position: relative;
+}
+h2.ttl01{
+    background:linear-gradient(90deg,#0C4BA2,#00885A);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.4;
+}
+.top h2.ttl01{
+    font-size: 38px;
+    margin-bottom: 2rem;
+}
+h2.ttl01 span {
+    display: block;
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    color: #fff;
+    -webkit-text-fill-color: initial;
+    width: max-content;
+    text-align: center;
+    padding: 8px 20px;
+    margin: 0 auto;
+}
+h2.ttl01.mt-0{
+    margin-top: 0;
+}
+.top h2{
+    text-align: center;
+}
+.top h2.ttl01 span{
+    font-size: 6.6rem;
+    font-style: italic;
+    font-weight: bold;
+    margin: 10px auto;
+}
+h2.ttl02{
+    text-align: center;
+    font-size: 60px;
+}
+h2.ttl02 .gra{
+    display: block;
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    color: #fff;
+    -webkit-text-fill-color: initial;
+    width: max-content;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 0 auto;
+    font-size: 28px;
+    margin-bottom: -50px;
+}
+h2.ttl02 .ttl02-01{
+    font-size: 30px;
+    padding-left: 100px;
+    display: block;
+    transform: translateY(75px);
+}
+h2.ttl02 .number{
+    font-size: 155px;
+    line-height: 1;
+    color: #108974;
+}
+h2.ttl03 span {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 3.8rem;
+}
+h2.ttl03{
+    font-size: 1.4rem;
+}
+h2.ttl03.gra{
+    background:linear-gradient(90deg,#0C4BA2,#00885A);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 2rem;
+}
+h3 {
+	font-size: 2.2rem;
+	margin-bottom: 2.6rem;
+	font-weight: bold;
+	margin-bottom: 2.0rem;
+}
+h4 {
+	font-size: 2.2rem;
+	margin-bottom: 2.2rem;
+	position: relative;
+	font-weight: bold;
+    margin-bottom: 1.0rem;
+}
+h5 {
+	font-size: 2.0rem;
+	margin-bottom: 2.0rem;
+	border-left: 6px solid #bbb;
+    padding-left: 6px;
+    margin-bottom: 10px;
+}
+h6 {
+	font-size: 1.8rem;
+	margin-bottom: 1.8rem;
+	border-left: 0.4rem solid #ccc;
+    padding-left: 0.4rem;
+    margin-bottom: 1.0rem;
+}
+/*************************** 02. toppage ***********************/
+.top #content{
+    padding-top: 0;
+}
+.top .menu-item-home{
+    display: none;
+}
+
+/* ===== Q HACK JAPAN メインビジュアル ===== */
+.qhack-mv {
+    position: relative;
+    background: #FFFFFF;
+    padding: 40px 0 80px;
+    overflow: hidden;
+}
+
+.qhack-mv__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+.qhack-mv__content {
+    flex: 0 0 auto;
+    max-width: 580px;
+    z-index: 2;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.qhack-mv__label {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin: 0 0 16px;
+    text-align: left;
+}
+
+.qhack-mv__title {
+    color: #313131 !important;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 1.6px;
+    margin: 0 0 24px;
+    text-align: left !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #313131 !important;
+}
+
+.qhack-mv__subtitle {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin: 0 0 32px;
+    text-align: left;
+    white-space: normal;
+}
+
+.qhack-mv__cta {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: nowrap;
+    margin-bottom: 48px;
+    justify-content: flex-start;
+}
+
+.qhack-mv__badges {
+    display: flex;
+    gap: 16px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.qhack-mv__badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 180px;
+    height: 110px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.qhack-mv__badge-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: auto;
+    z-index: 0;
+}
+
+.qhack-mv__badge-label {
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.52px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.qhack-mv__badge-value {
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.52px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.qhack-mv__badge-number {
+    color: #313131;
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 1.04px;
+}
+
+.qhack-mv__image {
+    flex: 1;
+    max-width: 750px;
+    margin: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.qhack-mv__image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+}
+
+/* ===== /Q HACK JAPAN メインビジュアル ===== */
+
+/*メインビジュアル（既存BIRDY用）*/
+.mv{
+    background: linear-gradient(#fff 40% ,#81C5AE);
+    padding-top: 0px;
+    padding-bottom: 60px;
+}
+.mv-inner{
+    display: flex;
+    flex-wrap: wrap;
+    width:98%;
+    max-width: 1654px;
+    justify-content: end;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: start;
+    position: relative;
+}
+.mv-inner:after{
+    content: "";
+    background: url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/mv-bg01.png) no-repeat center;
+    width: 992px;
+    height: 618px;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.mv-text{
+    width:48%;
+    max-width:740px;
+    padding-top: 40px;
+    z-index: 2;
+}
+.mv-img{
+    width:50%;
+    z-index: 2;
+}
+.mv-img img{
+    transform: translateX(-40px);
+}
+.mv-img-sp{
+    display: none;
+}
+.mv-btns{
+    display: flex;
+    justify-content: space-between;
+}
+.mv-btn{
+    width:49%;
+}
+.copy-01{
+    background-image: linear-gradient(90deg, #00885A, #0C4BA2);
+    color: #fff;
+    padding: 12px 16px;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 42px;
+    font-weight: bold;
+}
+.copy-02{
+    font-size: 60px;
+    font-weight:bold ;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+.mv-achievements{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.mv-achievements li{
+    width:24%;
+}
+.top-01{
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.top-01-slider img {
+    width:100%;/*画像の横幅100%*/
+    height:auto;
+}
+.top-01-slider .slick-slide {
+    margin:0 ;/*画像左右の余白*/
+}
+.top-01 p {
+    font-size: 2.6rem;
+    line-height: 1.4;
+}
+.top-01 p strong{
+    font-size: 4.6rem;
+}
+.top-02{
+    padding-top: 6rem;
+}
+.top-02 h1 span.gra {
+    transform: initial;
+    margin: 0 auto 30px;
+    font-size: 4.2rem;
+}
+.top-02 h1 span.birdy {
+    font-size: 8rem;
+}
+.top-02 p{
+    font-size: 2rem;
+}
+.top-03{
+    background:#00885A14;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.top .area-mychannel p{
+    font-size: 2rem;
+}
+.top-04-box li {
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    width: 24%;
+    filter: drop-shadow(0 4px 25px rgba(0, 0, 0, 0.1));
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+.top-04-box li span{
+    display: block;
+    font-weight: bold;
+}
+.top-04-box li span.number{
+    font-size: 6rem;
+    font-weight: bold;
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.top-04-box li span.number span{
+    display: inline;
+    font-size: 22px;
+}
+.top-04-box li span.year{
+    font-size:24px;
+}
+.cta-box {
+    background: url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/common/cta-box-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 60px;
+    margin-top: 6rem;
+}
+.cta-box-consulting{
+    background:#fff;
+    border-radius: 10px;
+    width:72%;
+    margin-left: 0;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:50px;
+    padding-right: 80px;
+}
+.cta-box-text{
+    font-size: 2.2rem;
+    font-weight: bold;
+    width:48%;
+    text-align: center;
+}
+.cta-box-text .green{
+    color: #00885A;
+}
+.cta-box-text .green span{
+    font-size: 4rem;
+}
+.cta-box-consulting-btn{
+    width:48%;
+}
+.cta-box-consulting-btn .copy{
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    color: #fff;
+    -webkit-text-fill-color: initial;
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+.cta-box-consulting-btn .copy:after{
+    content: "";
+    bottom: -12px;
+    position:absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 12px solid #00885A;
+    border-bottom: 0;
+    right: 5%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+.cta-box-consulting-btn .copy .number{
+    color:#FFE83C;
+}
+.cta-box-bottom{
+    background:#fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:30px;
+    margin-top: 20px;
+    position: relative;
+}
+.cta-box-bottom ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width:834px;
+    width:98%;
+}
+.cta-box-bottom ul li{
+    max-width:360px;
+    list-style: none;
+}
+.cta-box-bottom ul li img{
+    width:100%;
+}
+.cta-box-toriya{
+    position: absolute;
+    right:10%;
+    top: -358px;
+    width:280px;
+}
+.top-05-achievement h3{
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    color: #fff;
+    -webkit-text-fill-color: initial;
+    width: 100%;
+    text-align: center;
+    padding: 8px 20px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+    position: relative;
+}
+.top-05-achievement-item{
+    background:#fff;
+    box-shadow: 2px 2px 2px 2px #ddd;
+}
+.top-05-achievement-text{
+    font-size:16px;
+    text-align: center;
+    font-weight: bold;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.top-05-achievement-text span.large{
+    font-size:24px;
+    display: block;
+    margin-top: 8px;
+}
+.top-05-achievement-text mark{
+    background:linear-gradient(transparent 80%, #FFDB10 80%);
+}
+.top-06{
+    margin-top: 2rem;
+}
+.top-06-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin:0 auto;
+}
+.top-06-box .top-06-box-item{
+    width:30%;
+    border:2px solid #00885A;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 36px;
+    position: relative;
+    padding: 0 30px;
+}
+.top-06-box-item-inner{
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+.top-06-box-item:before {
+    content: "";
+    width: 22px;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    left: -12%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    border-radius: 50%;
+    background: url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/triangle.png) no-repeat center;
+    background-size: contain;
+}
+.top-06-box-item.no-triangle:before{
+    display: none;
+}
+.top-06-box-item .number{
+    text-align: center;
+    color: #fff;
+    background-color: #00885A;
+    border-radius: 50%;
+    font-size: 4.4rem;
+    padding: 3rem 1rem 1rem;
+    display: block;
+    transform: translateY(-43px);
+    width:104px;
+    margin: 0 auto;
+    margin-bottom: -48px;
+    font-weight: bold;
+}
+.top-06-box-item .img{
+    width:122px;
+    margin: 0 auto;
+}
+.top-06-box-item .img img{
+    width: 100%;
+}
+.top-06-box-item{
+    font-size: 2.8rem;
+}
+.top-09 h3{
+    margin-bottom: 0;
+    position: relative;
+    padding-left: 36px;
+}
+.top-09 h3:before{
+    content: "";
+    width:28px;
+    height:28px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    border-radius: 50%;
+    background: url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/top-09-arrow.png) no-repeat center;
+    background-size: contain;
+}
+.top-08{
+    background: url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/top-08-bg.png) no-repeat center;
+    background-size: cover;
+    padding-bottom: 8rem;
+    padding-top: 6rem;
+}
+.top-08 h2{
+    color:#fff;
+}
+.top-08-box{
+    background:#333333;
+    padding:7rem;
+    padding-top: 0rem;
+}
+.top-08-box p,.top-08-box ul li{
+    color: #fff;
+}
+.top-08-box ul li{
+    list-style: disc;
+}
+.top-08-box-01{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: -30px;
+}
+.top-08-img{
+    transform: translateY(-60px);
+    max-width: 280px;
+}
+.top-08-copy{
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-left: 14rem;
+}
+.top-08-name{
+    font-weight: bold;
+    margin-left: 6rem;
+}
+.top-08-name span{
+    display: block;
+    font-size: 3.2rem;
+}
+.top-news{
+    background-color: #EBF5F2;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+    margin-top: 0;
+}
+.top-news dl.table dt{
+    background-color:  #EBF5F2;
+}
+/*************************** 03. form  ***********************/
+.inquiry-box {
+    text-align: center;
+}
+.inquiry-box .form-inner {
+    margin: 5% auto;
+    width: 75%;
+}
+.inquiry-box .form-inner .contact-form {
+    margin: auto;
+    background: #F7F7F7;
+    padding: 5%;
+}
+.inquiry-box .form-inner .contact-form .input-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: left;
+}
+.inquiry-box .form-inner .contact-form .input-box:not(:first-child) {
+    margin-top: 6.7%;
+}
+.inquiry-box .form-inner .contact-form .input-box .label-area {
+    padding: 6px 0;
+    width: 25%;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.inquiry-box .form-inner .contact-form .input-box .label-area span.required,
+.inquiry-box .form-inner .contact-form .input-box .label-area span.will{
+    margin-right:15px;
+    background:#009bde;
+    color:#fff;
+    padding:8px 12px;
+    text-decoration: none;
+    border-bottom:none;
+    font-size: 1.4rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.inquiry-box .form-inner .contact-form .input-box .label-area span.will{
+    background:#999;
+    color:#fff;
+}
+
+.inquiry-box .form-inner .contact-form .input-box .input-area {
+    width: 75%;
+    color: #d0d0d0;
+    position: relative;
+}
+.inquiry-box .form-inner .contact-form .input-box .input-area input {
+    padding: 9px 12px;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #d0d0d0;
+    border: 1px solid #d0d0d0;
+}
+.inquiry-box .form-inner .contact-form .input-box .input-area select{
+	padding: 9px 12px;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #000;
+    border: 1px solid #d0d0d0;
+}
+.inquiry-box .form-inner .contact-form .input-box .input-area textarea {
+    resize: none;
+    padding: 9px 12px;
+    width: 100%;
+    height: 243px;
+    font-size: 1.8rem;
+    color: #d0d0d0;
+    border: 1px solid #d0d0d0;
+}
+.inquiry-box .form-inner .contact-form .input-box .input-area input:focus, .inquiry-box .form-inner .contact-form .input-box .input-area textarea:focus {
+    outline: none;
+    color: #343434;
+    border: 1px solid #127dd6;
+    box-shadow: 0 0 1px 0 rgba(18, 125, 214, 0.45);
+}
+.inquiry-box .form-inner .contact-form .input-box .input-area .input-error {
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    color: #c00;
+}
+.inquiry-box .form-inner .contact-form .input-box .input-area .input-error.wpcf7-not-valid-tip {
+    display: block;
+}
+.inquiry-box .form-inner .contact-form .action-box {
+    margin-top: 7%;
+}
+.inquiry-box .form-inner .note {
+    margin-top: 4%;
+}
+.inquiry-box .form-inner .note small {
+    font-size: 1.4rem;
+    line-height: 2.4;
+    letter-spacing: 0.2em;
+}
+
+input[type="submit"] {
+    transition: all 0.3s ease 0.2s;
+    border: none;
+    background: #02367C;
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0.2s;
+    z-index: 1;
+    padding: 17px 0;
+    width: 260px;
+    font-size: 1.6rem;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    letter-spacing: 0.18em;
+    overflow: hidden;
+    position: relative;
+}
+input[type="submit"]:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease 0.2s;
+    color: #fff;
+    border: none;
+}
+input[type="submit"]::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-linear-gradient(left, #127dd6, #4ec9e5);
+    background: linear-gradient(to right, #127dd6, #4ec9e5);
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0.2s;
+    transition: all 0.3s ease 0.2s;
+}
+.wpcf7-spinner{
+    display: none;
+}
+/*************************** 04. 下層ページ  ***********************/
+.area-page .l-content{
+    padding-top: 2em;
+}
+.l-mainContent__inner>.post_content{
+    margin-top: 2em;
+}
+.l-topTitleArea__body .c-pageTitle{
+    color: #fff;
+}
+
+/*エリア*/
+/*FV*/
+
+.area-page .l-topTitleArea{
+    display: none;
+}
+.area-container section{
+    margin-top: 50px;
+}
+.area-fv{
+    background:linear-gradient(#fff 40% ,#81C5AE);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.area-fv-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    width:98%;
+    margin: 0 auto;
+}
+.area-fv-left{
+    width:39.5%;
+}
+.area-fv-right{
+    width:58%;
+}
+.area-fv-left .text01{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.4;
+    background:linear-gradient(90deg,#0C4BA2,#00885A);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
+    transform: translateY(-10px);
+}
+.area-fv-left .text01 span{
+    font-size: 38px;
+}
+.area-fv-left .text02{
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 28px;
+}
+.area-fv-left .text02 strong{
+    display: block;
+    line-height: 1;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 58px;
+    background: #00885A;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg,#0C4BA2 , #00885A);
+}
+.area-fv-left .text02 span.white{
+    display: inline-block;
+    width: 96%;
+    font-size: 35px;
+    margin-top: 10px;
+}
+.area-fv-left .text03{
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-top: 34px;
+    margin-bottom: 48px;
+}
+.area-fv-right-point{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.area-fv-right-point li{
+    background:url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/area/area-fv-bg01.png) no-repeat center;
+    background-size: contain;
+    height: 93px;
+    width: 23%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#707070;
+    font-weight: bold;
+    font-size: 15px;
+}
+.area-fv-right-point li span.green{
+    display: inline;
+    color: #00885A;
+    font-size: 20px;
+}
+.area-fv-right-img{
+    margin-top: 48px;
+}
+.area-fv-btns{
+    width:100%;
+    margin-top: 0px;
+}
+.flex-container-two.area-fv-btns{
+    justify-content: space-between;
+}
+.flex-container-two > .area-fv-btn{
+    margin-left: 0;
+    margin-right: 0;
+    width:49%;
+}
+.area-fv-btn{
+    background:#0C4BA2;
+    border-radius: 8px;
+}
+.area-fv-btn.download{
+    text-align: left;
+    position: relative;
+}
+.area-fv-btn.download:before {
+    content: "";
+    background: url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/area/area-fv-download.png) no-repeat center;
+    width: 197px;
+    height: 107px;
+    background-size: contain;
+    position: absolute;
+    top: 43%;
+    left: 9%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.area-fv .area-fv-btn.download:before {
+    left: 12%;
+}
+.area-fv-btn.download a{
+    text-align: left;
+    padding-left: 42%;
+}
+.area-fv-btn.green{
+    background:#00885A;
+}
+.area-fv-btn a{
+    display: block;
+    width:100%;
+    padding:20px 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.area-fv-btn a span.sub{
+    display: block;
+    font-size:16px ;
+}
+
+/*支援ロゴ*/
+.area-logo-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.area-logo-list li{
+    width: 19%;
+    margin-bottom: 1%;
+}
+
+.city h1{
+    margin-top: 0;
+}
+.area-01{
+    padding-bottom: 80px;
+}
+.city .area-01{
+    padding-bottom: 40px;
+}
+.area-01 p{
+    font-size: 16px;
+    line-height: 2.4;
+}
+/*一気通貫でサポート*/
+.area-support{
+    background:#00885A14;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.city .area-support{
+    margin-top: 60px;
+}
+.area-support-box li{
+    text-align: center;
+    font-weight: bold;
+}
+.area-support-box li img{
+    margin-bottom: 10px;
+}
+/*ローカルエリア*/
+.area-local-container{
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+.area-local-container-inner{
+    position: relative;
+    color: #fff;
+    padding:70px;
+    z-index: 2;
+}
+.area-local-container-inner p{
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+.area-local-container-inner p strong{
+    font-size: 32px;
+}
+.area-local-container-inner:before{
+    content:"";
+    width:100vw;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    background:linear-gradient(90deg,#00885A,#0C4BA2);
+    z-index: -2;
+}
+.area-local-container-inner:after{
+    content: "";
+    width:400px;
+    height:490px;
+    background:url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/area/area-toriya.png) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    bottom:0;
+}
+.area-local-container-inner .text02{
+    max-width: 500px;
+}
+.area-local-container .name{
+    position: absolute;
+    color: #fff;
+    font-size: 16px;
+    bottom: 30px;
+    left: 50%;
+}
+.area-local h3{
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+.area-local h3:after{
+    content: "";
+    width:120px;
+    height: 5px;
+    background:linear-gradient(90deg,#00885A,#0C4BA2);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+.area-local-city{
+    background:#EBF6F2;
+    padding-top: 250px;
+    margin-top: -220px;
+    position: relative;
+}
+.city-list{
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.city-list.center{
+    justify-content: center;
+}
+.city-list li{
+    width:max-content;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.city-list li a{
+    display: block;
+    width: 100%;
+    background:#f7f7f7;
+    text-align: center;
+    color: #333333;
+    padding:5px 20px;
+    transition: 0.5s;
+}
+.city-list li:hover a{
+    background:#999;
+    color: #fff;
+}
+.area-achievement{
+    padding-top: 0;
+    padding-bottom: 0;
+    background: url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/area/area-achievement-bg01.png) top center;
+    background-size: contain;
+}
+.area-achievement-box{
+    padding-top: 30px;
+}
+.area-achievement-box figure{
+    width:92%;
+    text-align: center;
+}
+.area-achievement-box.pt2 figure{
+    margin-right: 0;
+    margin-left: auto;
+}
+.area-achievement-box.pt2{
+    transform: translateY(120px);
+}
+.area-achievement-box.pt3{
+    transform: translateY(-100px);
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+.area-achievement-box h3{
+    display: block;
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    color: #fff;
+    -webkit-text-fill-color: initial;
+    width: 94%;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 0 auto;
+    margin-left: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.area-achievement-box.pt2 h3{
+    margin-right: 0;
+    margin-left: auto;
+}
+.area-achievement-img{
+    transform: translateY(100px);
+    text-align: center;
+}
+.area-achievement-img img{
+    width:304px;
+}
+.area-mychannel{
+    padding-top: 0;
+}
+.area-mychannel p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.area-mychannel .iframe-content{
+    width:49.5%;
+    padding: 27.25% 0 0 0;
+}
+.d_flex{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.d_flex.two > .iframe-content{
+    width:49%;
+    padding: 28% 0 0 0;
+}
+.area-failure{
+    background:#108974;
+    border-radius: 100px 100px 0 0;
+    padding-bottom: 0;
+    padding-top: 50px;
+    position: relative;
+}
+.area-failure:after{
+    content:"";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-right: 132px solid transparent;
+    border-left: 132px solid transparent;
+    border-top: 86px solid #108974;
+    border-bottom: 0;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+.area-failure h2{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    letter-spacing: 1px;
+}
+.area-failure h2 span{
+    position: absolute;
+    background:#000;
+    left: -10%;
+    top: -85px;
+    transform: rotate(-5deg);
+    padding: 8px 30px;
+}
+.area-failure-box{
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.area-failure-box p{
+    width:66%;
+    color: #fff;
+    font-weight: bold;
+    line-height: 2.4;
+    margin-top: 0;
+    font-size: 18px;
+}
+.area-failure-pattern{
+    padding-top: 60px;
+    background:#D9D9D9;
+    border-radius: 100px 100px 0 0;
+    padding-bottom: 60px;
+}
+.area-failure-pattern h3{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.area-failure-pattern h3:before{
+    content:"";
+    background: url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/area/area-failure-04.png) no-repeat center;
+    width: 41px;
+    height: 34px;
+    background-size: contain;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.area-failure-pattern-list{
+    width:620px;
+    margin: 0 auto;
+    position: relative;
+}
+.area-failure-pattern-list:before{
+    content:"";
+    background: url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/area/area-failure-03.png) no-repeat center;
+    width: 76px;
+    height: 75px;
+    background-size: contain;
+    position: absolute;
+    left: -160px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.area-failure-pattern-list:after{
+    content:"";
+    background: url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/area/area-failure-02.png) no-repeat center;
+    width: 76px;
+    height: 75px;
+    background-size: contain;
+    position: absolute;
+    right: -120px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.area-failure-pattern-list li{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: 50px;
+}
+.area-failure-pattern-list li:before{
+    content:"";
+    background:url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/area/area-check.png) center no-repeat;
+    background-size: contain;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.area-cause{
+    position: relative;
+    padding-top: 80px;
+}
+.area-cause:after{
+    content:"";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-right: 132px solid transparent;
+    border-left: 132px solid transparent;
+    border-top: 86px solid #108974;
+    border-bottom: 0;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+.area-cause h2{
+    margin-bottom: 60px;
+}
+.area-cause-card{
+    border-radius: 8px;
+    box-shadow: 0 1px 12px 1px #ddd;
+    padding: 40px 80px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.area-cause-card ul.listing{
+    margin-bottom: 0;
+}
+.area-cause-card ul.listing li{
+    margin-bottom: 12px;
+    font-size: 18px;
+    list-style: disc;
+}
+.area-cause-card h3{
+    font-size: 24px;
+    margin-top: 0;
+}
+.area-cause-card h3 span{
+    color: #fff;
+    background:linear-gradient(90deg,#00885A,#0C4BA2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    font-size: 24px;
+    margin-right: 14px;
+}
+.area-point{
+    background:#EBF6F2;
+    padding-top: 80px;
+}
+.area-point.bg-white{
+    background:#fff;
+    padding-top: 0;
+}
+.area-point-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-top: 0;
+}
+.area-point-box h3{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 24px;
+    padding-left: 0;
+}
+.area-point-box h3 span{
+    background:linear-gradient(90deg,#00885A,#0C4BA2);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.area-point-box h3 span.number{
+    display: inline;
+    font-size: 44px;
+    margin-left: 3px;
+}
+.area-point-box .text{
+    width:59%;
+    font-size: 16px;
+}
+.area-point-box ul.listing{
+    margin-top: 16px;
+}
+.area-point-box .img{
+    width: 39%;
+    padding:10px; 
+    background:#fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.area-point-box .casting-table{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.area-point-box .casting-table dt{
+    background:#108974;
+    width: 38%;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 6px;
+}
+.area-point-box .casting-table dd{
+    width: 62%;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 6px;
+}
+.area-data{
+    padding-bottom: 10px;
+}
+.area-data-card{
+    border-radius: 8px;
+    box-shadow: 0 1px 12px 1px #ddd;
+    padding: 50px 80px;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.area-data-card h3{
+    display: block;
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    color: #fff;
+    -webkit-text-fill-color: initial;
+    width: max-content;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.area-data-card ul.listing{
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.area-data-card ul.listing li{
+    font-size: 18px;
+    list-style: disc;
+}
+.area-data-card ul.listing li strong{
+    font-size: 20px;
+    color: #E83828;
+}
+.area-specific{
+    background: #EBF6F2;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.area-specific h2.ttl01 span{
+    font-size: 24px;
+}
+.area-specific h2.ttl01{
+    margin-top: 0;
+}
+.area-specific-box{
+    background: #fff;
+    border-radius: 8px;
+    border:2px solid #108974;
+    padding:50px 80px;
+}
+.area-specific-box p{
+    font-size: 18px;
+}
+
+.area-merit {
+    padding-top: 90px;
+    padding-bottom: 78px;
+    font-family: var(--font-family-ja);
+    font-style: normal;
+}
+
+.area-merit-header {
+    width: fit-content;
+    margin-inline: auto;
+    text-align: center;
+}
+.area-merit-header-copy {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.8;
+    color: #00885a;
+}
+.area-merit-headingLv2 {
+    margin-top: 0px;
+}
+.area-merit-sub {
+    display: block;
+    margin-top: 0px;
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #108974, #0c4ba2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.area-merit-heading {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 40px;
+}
+.area-merit-heading-main {
+    margin-top: 10px;
+    width: fit-content;
+    margin-inline: auto;
+    display: flex;
+    column-gap: 10px;
+}
+.area-merit-heading-number {
+    font-size: 115px;
+    font-weight: 700;
+    line-height: 0.5;
+    color: #108974;
+}
+.area-merit-heading-text {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #333;
+}
+
+.area-merit-content {
+    margin-top: 80px;
+}
+
+.area-merit-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 42px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.area-merit-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 23px 34px 46px 56px;
+    box-shadow: 4px 4px 10px 2px #0000002e;
+}
+
+.area-merit-item-sub {
+    font-family: 'DIN Alternate';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2.2916666667;
+    background: linear-gradient(90deg, #108974, #0c4ba2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.area-merit-item-number {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.25;
+    background: linear-gradient(90deg, #108974, #0c4ba2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.area-merit-item-heading {
+    margin-top:calc(-1 * 5px);
+    margin-bottom: initial;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2.2916666667;
+    color: #000;
+    padding-left: 0;
+}
+.area-merit-item-body {
+    margin-top:calc(10px);
+    font-family: 'DIN Alternate';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2;
+    color: #000;
+}
+.area-merit-item-list-item {
+    position: relative;
+    padding-left: 24px;
+}
+.area-merit-item-list-item::before {
+    position: absolute;
+    top: 13px;
+    left: 9px;
+    width: 5px;
+    height: 5px;
+    content: '';
+    background-color: #000;
+    border-radius: 50%;
+}
+.area-merit-item-image-wrapper {
+    flex-shrink: 0;
+    width: 22.2395833333vw;
+}
+.area-vseo{
+    background: #EBF6F2;
+    padding-top: 30px;
+}
+.area-vseo-box h3{
+    display: block;
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    color: #fff;
+    -webkit-text-fill-color: initial;
+    width: max-content;
+    text-align: center;
+    padding: 8px 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.area-vseo-box{
+    background: #fff;
+    border-radius: 8px;
+    border:2px solid #108974;
+    padding:50px 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+.area-vseo-table thead th{
+    text-align: left;
+    padding-bottom: 10px;
+}
+.area-vseo-table thead tr,.area-vseo-table tbody tr{
+    border-bottom: 1px solid #999;
+}
+.area-vseo-table tbody td{
+    min-width: 190px;
+    padding: 20px 14px 20px 0;
+}
+.area-result{
+    background:#00885A;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.area-result-box{
+    background: #fff;
+    padding: 40px;
+}
+.area-result-box .flex-container-two .iframe-content{
+    width:48%;
+    padding: 27.25% 0 0 0;
+}
+.area-result-box .text{
+    font-size: 18px;
+}
+.area-result-box h3{
+    display: block;
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    color: #fff;
+    -webkit-text-fill-color: initial;
+    width: max-content;
+    text-align: center;
+    padding: 8px 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.area-result-case{
+    padding-bottom: 0;
+}
+.area-result-case-card{
+    border-radius: 8px;
+    box-shadow: 0 1px 12px 1px #ddd;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+.area-result-case-card .card-text{
+    padding:0px 10px;
+}
+.area-result-case-card h4{
+    font-size: 20px;
+    color: #00885A;
+}
+.area-result-case-card dl.table{
+    margin-bottom: 0;
+}
+.area-result-case-card dl.table dt{
+    width:30%;
+    float:inherit;
+    padding:15px 10px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+.area-result-case-card dl.table dd{
+    border-bottom: 1px solid #ddd;
+    padding:5px 10px 15px;  
+    width:70%;
+    font-size: 14px; 
+}
+.area-result-case-card dl.table dd:last-of-type{
+    border-bottom: none;
+}
+.area-industry .list-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.area-industry .list-flex li{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.area-industry .list-flex li:after{
+    content:" / ";
+    margin-right:5px;
+}
+.area-industry .list-flex li:last-of-type:after{
+    display: none;
+}
+.area-customer{
+    padding-bottom: 0;
+}
+.area-customer .heading-box{
+    background:url(https://birdy-official.co.jp/wp-content/themes/swell_child/assets/images/img/area/area-customer-bg.png) no-repeat center;
+    padding: 40px 0;
+}
+.area-customer .heading-box p{
+    color:#fff;
+}
+.area-customer .heading-box h2{
+    color:#fff;
+    text-align: center;
+    margin-top: 0;
+}
+.area-customer .iframe-content{
+    width: 90%;
+    max-width: 648px;
+    margin:0 auto;
+    padding: 400px 0 0 0;
+}
+.area-customer-box{
+    padding-top: 10px;
+}
+.area-customer-box-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    align-items: center;
+}
+.area-customer-box-top figure{
+    width: 38%;
+}
+.area-customer-box-top figure img{
+    border-radius: 10px;
+}
+.area-customer-box-top .right{
+    width:60%;
+}
+.area-customer-box h3{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 0;
+    margin-top: 0;
+}
+.area-customer-box dl{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+.area-customer-box dl dt{
+    width:20%;
+    padding-bottom: 10px;
+}
+.area-customer-box dl dd{
+    width:79%;
+    padding-bottom: 10px;
+}
+.area-customer-box .text-box{
+    border:2px solid #999;
+    padding: 30px;
+    padding-top: 10px;
+    margin-top:16px;
+}
+.area-customer-box .text-box p strong{
+    font-size:20px;
+    color: #108974;
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #333;
+}
+.area-customer-box.flex-right{
+    padding-top: 0;
+}
+.area-customer-box.flex-right .area-customer-box-top{
+    margin-left: auto;
+    margin-right: 0;
+}
+.area-pettern {
+    background: #EBF6F2;
+    padding-top: 30px;
+}
+.area-faq{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.area-faq-box dt{
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.area-faq-box dt span{
+    background:linear-gradient(90deg,#0C4BA2,#00885A);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height: 40px;
+    font-size:22px;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.area-faq-box dd span{
+    font-size:22px;
+    margin-right: 10px;
+}
+.area-faq-box dd{
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+p.gra{
+    background: linear-gradient(90deg,#0C4BA2,#00885A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 6rem;
+}
+.area-fv-btns.center{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+p.center{
+    text-align: center;
+}
+p.txt{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.area-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+.area-table table th {
+    padding:20px 0;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+    border-bottom: 1px solid #ddd;
+}
+.area-table table td{
+    padding:20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.area-table table td a {
+    margin-right: 0.5em;
+    display: inline-block;
+}
+.c-section.-breadcrumb{
+    margin-top: 0!important;
+}
+/* ダウンロードページ */
+.download-ttl{
+    font-size:3rem;
+    text-align:center;
+    margin-bottom:5rem;
+}
+.download-page {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    align-items: stretch;
+}
+.download-left {
+    flex: 1 1 50%;
+    max-width: 50%;
+    background:#fff;
+    padding:30px 50px 40px;
+    border-radius:10px;
+    box-shadow: 0 .1875rem .375rem rgba(0, 0, 0, .16);
+}
+.download-page h1{
+    font-size:24px;
+}
+.download-page h2{
+    padding:14px 20px;
+    background:#eee;
+    border-left:.3125rem solid #ccc;
+    font-size:20px;
+    margin-bottom:10px;
+}
+.download-cat{
+    color:#999;
+    font-size:12px;
+    font-weight:bold;
+}
+.download-image{
+    margin-top:10px;
+    margin-bottom:20px;
+} 
+.download-right {
+    flex: 1 1 45%;
+    max-width: 45%;
+    background: #fff;
+    box-shadow: 0 .1875rem .375rem rgba(0, 0, 0, .16);
+    padding: 34px 30px;
+    border-radius: 8px;
+}
+.download-heading{
+    background:#f2f2f2;
+    padding:20px;
+    font-size:24px;
+    margin-top:80px;
+}
+/* フォーム全体 */
+.l-contact__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* 各項目のラップ */
+.l-contact__item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 見出し部分（ラベル） */
+.l-contact__item-head {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+/* 必須・任意ラベル */
+._required {
+    color: #e63c02;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+._optional {
+    color: #999;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+/* 入力欄全体 */
+.l-contact__item-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 共通の input, select, textarea スタイル */
+.l-contact__item-body input[type="text"],
+.l-contact__item-body input[type="tel"],
+.l-contact__item-body input[type="email"],
+.l-contact__item-body select,
+.l-contact__item-body textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.l-contact__item-body input:focus,
+.l-contact__item-body select:focus,
+.l-contact__item-body textarea:focus {
+    outline: none;
+    border-color: #e63c02;
+}
+
+/* Submitボタン */
+.l-contact__submit {
+    margin-top: 32px;
+    text-align: center;
+}
+.l-contact__submit p{
+    text-align:center;
+}
+
+.l-contact__submit input[type="submit"] {
+    background-color: #e63c02;
+    color: #fff;
+    border: none;
+    padding: 14px 40px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.l-contact__submit input[type="submit"]:hover {
+    background-color: #c53000;
+}
+.form-annotation{
+    font-size:14px;
+    color:gray;
+    margin-top:20px;
+}
+.wpcf7-spinner{
+    position:absolute;
+}
+.post_content h2.contact-ttl{
+    margin-top:30px!important;
+    margin-bottom:10px;
+}
+.three-col .download-grid{
+    grid-template-columns: repeat(3, 1fr); 
+}
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.download-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.download-card:hover {
+    transform: translateY(-4px);
+}
+
+.download-thumb img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.download-meta {
+    padding: 16px;
+}
+
+.download-meta h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    padding-left:0;
+    padding-bottom:0;
+}
+.download-meta h3:before{
+    display:none;
+}
+
+.download-intro {
+    font-size: 14px;
+    color: #555;
+}
+
+/* お問合せフォーム */
+/*ContactForm7カスタマイズ*/
+table.CF7_table{
+    width:100%;
+    margin:0 auto;
+    border: 3px solid #e5e5e5;
+}
+
+table.CF7_table tr{
+    border-top: 1px solid #e5e5e5;
+}
+.CF7_table th{
+    vertical-align: middle;
+}
+
+.single .entry-content table.CF7_table,
+.page .entry-content table.CF7_table{
+    display:table;
+}
+
+/*入力欄*/
+.CF7_table input, .CF7_table textarea {
+    border: 1px solid #d8d8d8;
+}
+
+.CF7_table ::placeholder {
+    color:#797979;
+}
+
+/*「必須」文字*/
+.CF7_req{
+    font-size:.9em;
+    padding: 5px 8px;
+    background: #222;/*オレンジ*/
+    color: #fff;
+    border-radius: 3px;
+    margin-right:3px;
+}
+
+/*「任意」文字*/
+.CF7_unreq{
+    font-size:.9em;
+    padding: 5px 8px;
+    background: #bdbdbd;/*グレー*/
+    color: #fff;
+    border-radius: 3px;
+    margin-right:3px;
+}
+.wpcf7-list-item{
+    margin:0 10px 0 0;
+}
+
+/* タイトル列 */
+@media screen and (min-width: 768px){
+    .CF7_table th{
+        width:31%!important;/*横幅*/
+        font-size:14px;
+    }
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 768px){
+    table.CF7_table{
+    width:95%;
+        max-width: 331px;
+    }
+    .CF7_table tr, .CF7_table td, .CF7_table th{
+    display: block;
+    max-width: 325px;
+    line-height:2.5em;
+    }
+    .CF7_table th{
+    background-color:#ebedf5;
+    }
+    .CF7_table input, .CF7_table textarea{
+        width:100%;
+    }
+    .CF7_table input[type="checkbox"]{
+        width:initial;
+    }
+}
+
+/* 「送信する」ボタン */
+.wpcf7 input.wpcf7-submit {
+    background-color:#f79034;/* オレンジ*/
+    border:0;
+    color:#fff;
+    font-size:1.2em;
+    font-weight:bold;
+    margin:0 auto;
+    width:100%;
+}
+
+.CF7_btn{
+    text-align:center;
+    margin-top:20px;
+}
+
+.wpcf7-spinner{
+    width:0;
+    margin:0;
+}
