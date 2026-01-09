@@ -282,27 +282,35 @@ body.admin-bar {
 .qhack-cta-section {
     width: 100%;
     max-width: 1920px;
+    min-height: 346px;
     margin: 0 auto;
+    margin-top: 0;
     padding: 49px 20px;
     background: linear-gradient(90deg, #FF3D3B 0%, #B701F7 100%);
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .qhack-cta-section__inner {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .qhack-cta-section__box {
     width: 1023px;
-    max-width: 100%;
-    padding: 40px 20px;
+    max-width: calc(100% - 40px);
+    min-height: 248px;
+    padding: 40px 60px;
     border-radius: 40px;
     background: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 32px;
     box-sizing: border-box;
 }
