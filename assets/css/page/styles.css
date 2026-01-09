@@ -354,6 +354,308 @@ h6 {
 
 /* ===== /Q HACK JAPAN メインビジュアル ===== */
 
+/* ===== Q HACK JAPAN 課題解決セクション ===== */
+.qhack-merit {
+    padding: 90px 0 100px;
+    background: #FFFFFF;
+}
+
+.qhack-merit__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.qhack-merit__header {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.qhack-merit__title {
+    max-width: 868px;
+    margin: 0 auto 4px;
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;
+}
+
+.qhack-merit__subtitle {
+    align-self: stretch;
+    color: #313131;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    margin: 0;
+}
+
+.qhack-merit__challenges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 60px auto 48px;
+}
+
+.qhack-merit__challenge {
+    position: relative;
+    display: flex;
+    width: 380px;
+    height: 100px;
+    padding: 14px 36px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 80px;
+    background: #FFF;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+/* グラデーションボーダーを疑似要素で実装 */
+.qhack-merit__challenge::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 80px;
+    padding: 2px;
+    background: linear-gradient(90deg, #FF3D3B 0%, #B701F7 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.qhack-merit__challenge-text {
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.72px;
+}
+
+.qhack-merit__description {
+    max-width: 1001px;
+    margin: 0 auto;
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.88px;
+}
+
+/* --- 課題解決スライダー --- */
+.qhack-merit__slider {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 60px auto 0 !important;
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+.qhack-merit__slider-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    transition: transform 0.4s ease-in-out !important;
+    width: 100% !important;
+}
+
+.qhack-merit__slide {
+    flex: 0 0 100% !important;
+    min-width: 100% !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+}
+
+.qhack-merit__slide-card {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+.qhack-merit__slide-title {
+    align-self: stretch;
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    margin: 0;
+}
+
+.qhack-merit__slide-arrow {
+    width: calc(100% - 200px);
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.qhack-merit__slide-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.qhack-merit__slide-image {
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.qhack-merit__slide-image img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+.qhack-merit__slide-text {
+    flex: 1;
+}
+
+.qhack-merit__slide-heading {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.12px;
+    margin: 0 0 16px;
+}
+
+.qhack-merit__slide-number {
+    color: #B701F7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.qhack-merit__slide-body {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* --- ページネーション --- */
+.qhack-merit__pagination {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.qhack-merit__pagination-btn {
+    width: 52px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    transition: opacity 0.3s ease;
+}
+
+.qhack-merit__pagination-btn:hover {
+    opacity: 0.7;
+}
+
+.qhack-merit__pagination-btn img {
+    width: 52px;
+    height: 52px;
+    display: block;
+}
+
+.qhack-merit__pagination-dots {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.qhack-merit__pagination-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #F2F2F2;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.qhack-merit__pagination-dot.active {
+    background: linear-gradient(90deg, #FF3D3B 0%, #B701F7 100%);
+}
+
+/* --- スライダー下テキスト --- */
+.qhack-merit__footer {
+    margin-top: 60px;
+}
+
+.qhack-merit__footer-text {
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.88px;
+    margin: 0;
+}
+
+.qhack-merit__footer-highlight {
+    color: #B701F7;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 1.04px;
+}
+
+/* ===== /Q HACK JAPAN 課題解決セクション ===== */
+
 /*メインビジュアル（既存BIRDY用）*/
 .mv{
     background: linear-gradient(#fff 40% ,#81C5AE);

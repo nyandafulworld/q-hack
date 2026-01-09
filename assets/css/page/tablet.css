@@ -63,6 +63,110 @@
     order: -1;
 }
 
+/* Q HACK 課題解決セクション - タブレット */
+.qhack-merit {
+    padding: 60px 0;
+}
+
+.qhack-merit__inner {
+    padding: 0 30px;
+}
+
+.qhack-merit__title {
+    font-size: 32px;
+    letter-spacing: 1.2px;
+    margin-bottom: 4px;
+}
+
+.qhack-merit__subtitle {
+    font-size: 18px;
+}
+
+.qhack-merit__challenges {
+    gap: 16px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.qhack-merit__challenge {
+    width: calc(50% - 8px);
+    max-width: 380px;
+    height: 90px;
+    padding: 12px 24px;
+}
+
+.qhack-merit__challenge-text {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.qhack-merit__description {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* スライダー - タブレット */
+.qhack-merit__slider {
+    margin-top: 40px;
+}
+
+.qhack-merit__slide-card {
+    gap: 16px;
+    padding: 16px;
+}
+
+.qhack-merit__slide-title {
+    font-size: 24px;
+}
+
+.qhack-merit__slide-arrow {
+    width: calc(100% - 120px);
+}
+
+.qhack-merit__slide-content {
+    gap: 24px;
+    padding: 0 10px;
+}
+
+.qhack-merit__slide-image img {
+    max-width: 300px;
+}
+
+.qhack-merit__slide-heading {
+    font-size: 22px;
+}
+
+.qhack-merit__slide-number {
+    font-size: 48px;
+}
+
+.qhack-merit__slide-body {
+    font-size: 16px;
+}
+
+.qhack-merit__pagination {
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.qhack-merit__pagination-btn img {
+    width: 52px;
+    height: 52px;
+}
+
+.qhack-merit__footer {
+    margin-top: 50px;
+}
+
+.qhack-merit__footer-text {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.qhack-merit__footer-highlight {
+    font-size: 22px;
+}
+
 /* 既存BIRDY用 */
 .mv-inner{
 	flex-direction: column-reverse;

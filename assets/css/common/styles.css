@@ -264,7 +264,7 @@ body.admin-bar {
 /* 無料相談ボタン */
 .qhack-cta-btn--contact {
     background: var(--qhack-gradient);
-    border: 2px solid transparent;
+    border: none;
 }
 
 .qhack-cta-btn--contact .qhack-cta-btn__sub,
@@ -414,6 +414,196 @@ body.admin-bar #body_wrap {
 }
 
 /* ===== /Q HACK JAPAN カスタムヘッダー ===== */
+
+/* ===== Q HACK JAPAN 会社紹介セクション ===== */
+.qhack-intro {
+    background-color: #FBEEFF;
+    padding: 80px 20px 100px;
+    margin-top: 0;
+}
+
+.qhack-intro__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* タイトルボックス（グラデーション背景） */
+.qhack-intro__title-box {
+    display: flex;
+    width: 834px;
+    max-width: 100%;
+    padding: 6px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #FF3D3B 0%, #B701F7 100%);
+    margin-bottom: 40px;
+}
+
+.qhack-intro__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin: 0;
+}
+
+.qhack-intro__title-sub {
+    width: 100%;
+    max-width: 600px;
+    color: #FFF;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+.qhack-intro__title-main {
+    width: 100%;
+    max-width: 818px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;
+}
+
+/* コンテンツエリア */
+.qhack-intro__content {
+    width: 834px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.qhack-intro__content p {
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.88px;
+    margin-bottom: 24px;
+}
+
+.qhack-intro__content p:last-child {
+    margin-bottom: 0;
+}
+
+/* 強調テキスト */
+.qhack-intro__highlight {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.04px;
+}
+
+/* CTAボタン */
+.qhack-intro__btn {
+    display: inline-flex;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 14px 36px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    background: #FFF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-bottom: 60px;
+    white-space: nowrap;
+    /* グラデーションボーダー */
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), linear-gradient(90deg, #FF3D3B 0%, #B701F7 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.qhack-intro__btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 61, 59, 0.2);
+}
+
+.qhack-intro__btn-text {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-align: center;
+}
+
+/* ランキングタイトル */
+.qhack-intro__ranking-title {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+/* ランキング画像 */
+.qhack-intro__ranking-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.qhack-intro__ranking-images img {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ランキング画像注釈 */
+.qhack-intro__ranking-note {
+    color: #666;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.56px;
+    text-align: center;
+    margin: 0;
+}
+
+/* 強調数字 */
+.qhack-intro__number {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.04px;
+}
+
+/* ===== /Q HACK JAPAN 会社紹介セクション ===== */
 
 /* Q HACK用ヘッダーはtopで位置調整済みのためmargin-top不要 */
 body.admin-bar header.qhack-header {

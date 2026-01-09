@@ -244,3 +244,6 @@ $(function () {
         isPopupClosed = true;
     });
 });
+
+// Q HACK JAPAN 課題解決スライダー
+// ※ スライダーのスクリプトはfront-page.phpにインラインで記述

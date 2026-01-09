@@ -15,6 +15,22 @@
     max-width: 550px;
 }
 
+/* Q HACK 課題解決セクション - PC */
+.qhack-merit__title {
+    font-size: 36px;
+    margin-bottom: 4px;
+}
+
+.qhack-merit__challenges {
+    gap: 16px;
+}
+
+.qhack-merit__challenge {
+    width: 360px;
+    height: 95px;
+    padding: 12px 32px;
+}
+
 /* 既存BIRDY用 */
 .copy-01{
     font-size: 34px;

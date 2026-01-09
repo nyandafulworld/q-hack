@@ -44,6 +44,59 @@
     .-img .c-headLogo__link{
         padding:5px 0;
     }
+    /* Q HACK 会社紹介セクション - タブレット */
+    .qhack-intro {
+        padding: 60px 20px 80px;
+    }
+    .qhack-intro__title-box {
+        width: 100%;
+        max-width: 700px;
+        padding: 6px 20px;
+    }
+    .qhack-intro__title-sub {
+        font-size: 24px;
+    }
+    .qhack-intro__title-main {
+        font-size: 32px;
+    }
+    .qhack-intro__content {
+        width: 100%;
+        max-width: 700px;
+    }
+    .qhack-intro__content p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .qhack-intro__content p br {
+        display: none;
+    }
+    .qhack-intro__highlight {
+        font-size: 22px;
+    }
+    .qhack-intro__btn {
+        width: auto;
+        padding: 12px 30px;
+    }
+    .qhack-intro__btn-text {
+        font-size: 16px;
+        letter-spacing: 0.64px;
+    }
+    .qhack-intro__ranking-title {
+        font-size: 32px;
+    }
+    .qhack-intro__ranking-images {
+        gap: 16px;
+    }
+    .qhack-intro__ranking-images img {
+        max-width: 160px;
+    }
+    .qhack-intro__ranking-note {
+        font-size: 13px;
+    }
+    .qhack-intro__number {
+        font-size: 22px;
+    }
+    
     /*************************** 03. 共通パーツ ***********************/
     .pc {
         display: none;

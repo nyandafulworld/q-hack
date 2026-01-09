@@ -39,6 +39,72 @@
     body.admin-bar .qhack-header {
         top: 46px;
     }
+    /* Q HACK 会社紹介セクション - スマホ */
+    .qhack-intro {
+        padding: 40px 16px 60px;
+    }
+    .qhack-intro__title-box {
+        width: 100%;
+        padding: 6px 16px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+    }
+    .qhack-intro__title-sub {
+        font-size: 16px;
+        letter-spacing: 0.64px;
+    }
+    .qhack-intro__title-main {
+        font-size: 22px;
+        letter-spacing: 0.88px;
+    }
+    .qhack-intro__content {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .qhack-intro__content p {
+        font-size: 15px;
+        line-height: 28px;
+        letter-spacing: 0.6px;
+        margin-bottom: 20px;
+    }
+    .qhack-intro__content p br {
+        display: none;
+    }
+    .qhack-intro__highlight {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .qhack-intro__btn {
+        width: auto;
+        max-width: calc(100% - 32px);
+        padding: 12px 24px;
+        margin-bottom: 40px;
+        white-space: normal;
+    }
+    .qhack-intro__btn-text {
+        font-size: 15px;
+        letter-spacing: 0.6px;
+    }
+    .qhack-intro__ranking-title {
+        font-size: 24px;
+        letter-spacing: 0.96px;
+        margin-bottom: 24px;
+    }
+    .qhack-intro__ranking-images {
+        gap: 12px;
+    }
+    .qhack-intro__ranking-images img {
+        max-width: calc(50% - 6px);
+        width: 100%;
+    }
+    .qhack-intro__ranking-note {
+        font-size: 12px;
+        padding: 0 16px;
+    }
+    .qhack-intro__number {
+        font-size: 18px;
+    }
+    
     /*************************** 03. 共通パーツ ***********************/
     .side-btn-container{
         display: none;
