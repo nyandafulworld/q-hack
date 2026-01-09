@@ -243,6 +243,26 @@
         </section>
         <!-- /Q HACK JAPAN 課題解決セクション -->
 
+        <!-- Q HACK JAPAN CTAセクション -->
+        <section class="qhack-cta-section">
+            <div class="qhack-cta-section__inner">
+                <div class="qhack-cta-section__box">
+                    <h2 class="qhack-cta-section__title">Qoo10運用代行に関するお問い合わせはこちらから</h2>
+                    <div class="qhack-cta-section__buttons">
+                        <a href="<?php echo esc_url( home_url( '/document/' ) ); ?>" class="qhack-cta-btn qhack-cta-btn--document">
+                            <span class="qhack-cta-btn__sub">Qoo10攻略のコツ！</span>
+                            <span class="qhack-cta-btn__main">サービス資料請求 <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/vector-1.png' ) ); ?>" alt="" class="qhack-cta-btn__arrow"></span>
+                        </a>
+                        <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="qhack-cta-btn qhack-cta-btn--contact">
+                            <span class="qhack-cta-btn__sub">強引な営業一切ナシ！</span>
+                            <span class="qhack-cta-btn__main">店舗分析・無料相談 <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/vector-2.png' ) ); ?>" alt="" class="qhack-cta-btn__arrow"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Q HACK JAPAN CTAセクション -->
+
     </article>
 </main>
 

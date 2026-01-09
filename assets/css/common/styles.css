@@ -264,7 +264,7 @@ body.admin-bar {
 /* 無料相談ボタン */
 .qhack-cta-btn--contact {
     background: var(--qhack-gradient);
-    border: none;
+    border: 2px solid transparent;
 }
 
 .qhack-cta-btn--contact .qhack-cta-btn__sub,
@@ -277,6 +277,56 @@ body.admin-bar {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(183, 1, 247, 0.3);
 }
+
+/* ===== Q HACK JAPAN CTAセクション ===== */
+.qhack-cta-section {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 49px 20px;
+    background: linear-gradient(90deg, #FF3D3B 0%, #B701F7 100%);
+    box-sizing: border-box;
+}
+
+.qhack-cta-section__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qhack-cta-section__box {
+    width: 1023px;
+    max-width: 100%;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    box-sizing: border-box;
+}
+
+.qhack-cta-section__title {
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    margin: 0;
+}
+
+.qhack-cta-section__buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ===== /Q HACK JAPAN CTAセクション ===== */
 
 /* ヘッダーナビゲーション */
 .qhack-header__nav {
