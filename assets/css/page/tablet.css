@@ -75,7 +75,7 @@
 .qhack-merit__title {
     font-size: 32px;
     letter-spacing: 1.2px;
-    margin-bottom: 4px;
+    margin-bottom: 0;
 }
 
 .qhack-merit__subtitle {
@@ -90,7 +90,7 @@
 
 .qhack-merit__challenge {
     width: calc(50% - 8px);
-    max-width: 380px;
+    max-width: 420px;
     height: 90px;
     padding: 12px 24px;
 }
@@ -150,7 +150,7 @@
 }
 
 .qhack-merit__pagination-btn img {
-    width: 52px;
+    width: auto;
     height: 52px;
 }
 

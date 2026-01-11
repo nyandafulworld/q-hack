@@ -327,7 +327,7 @@ h6 {
 
 .qhack-mv__badge-number {
     color: #313131;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
     font-size: 26px;
     font-style: normal;
     font-weight: 600;
@@ -373,7 +373,8 @@ h6 {
 
 .qhack-merit__title {
     max-width: 868px;
-    margin: 0 auto 4px;
+    margin: 0 auto;
+    padding-bottom: 0;
     color: #313131;
     font-family: "Noto Sans JP", sans-serif;
     font-size: 40px;
@@ -387,13 +388,14 @@ h6 {
     align-self: stretch;
     color: #313131;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.88px;
     margin: 0;
+    margin-top: 0;
 }
 
 .qhack-merit__challenges {
@@ -401,14 +403,15 @@ h6 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1320px;
     margin: 60px auto 48px;
 }
 
 .qhack-merit__challenge {
     position: relative;
     display: flex;
-    width: 380px;
+    width: calc(33.333% - 14px);
+    min-width: 380px;
     height: 100px;
     padding: 14px 36px;
     flex-direction: column;
@@ -561,7 +564,7 @@ h6 {
 
 .qhack-merit__slide-number {
     color: #B701F7;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
@@ -580,17 +583,20 @@ h6 {
 
 /* --- ページネーション --- */
 .qhack-merit__pagination {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
     width: 100%;
-    margin-top: 40px;
+    max-width: 100%;
+    margin: 40px auto 0;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .qhack-merit__pagination-btn {
-    width: 52px;
-    height: 52px;
+    width: auto;
+    height: auto;
     border: none;
     cursor: pointer;
     background: transparent;
@@ -603,7 +609,7 @@ h6 {
 }
 
 .qhack-merit__pagination-btn img {
-    width: 52px;
+    width: auto;
     height: 52px;
     display: block;
 }

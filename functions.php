@@ -20,6 +20,8 @@ add_action('after_setup_theme', function(){
  */
 add_action('wp_enqueue_scripts', function () {
 
+    // ※ Google Fonts は header.php で直接読み込み済み
+
     // 子テーマの style.css を読み込み
     $timestamp = date('Ymdgis', filemtime(get_stylesheet_directory() . '/style.css'));
     wp_enqueue_style('child_style', get_stylesheet_directory_uri() . '/style.css', [], $timestamp);

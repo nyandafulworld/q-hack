@@ -447,4 +447,98 @@
     .footer-box h3 {
         font-size: 30px;
     }
+    
+    /* Q HACK 選ばれる理由セクション - タブレット */
+    .qhack-reasons__inner {
+        max-width: 100%;
+        padding: 120px 0 80px;
+    }
+    .qhack-reasons__header {
+        padding: 0 24px;
+        margin-bottom: 30px;
+    }
+    .qhack-reasons__title {
+        font-size: 32px;
+        letter-spacing: 1.28px;
+    }
+    .qhack-reasons__subtitle {
+        font-size: 18px;
+        letter-spacing: 0.72px;
+    }
+    .qhack-reasons__description {
+        padding: 0 24px;
+        margin-bottom: 60px;
+    }
+    .qhack-reasons__description p {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.72px;
+    }
+    .qhack-reasons__description p br {
+        display: none;
+    }
+    .qhack-reasons__highlight {
+        font-size: 20px;
+        line-height: 34px;
+        letter-spacing: 0.8px;
+    }
+    .qhack-reasons__item {
+        margin-bottom: 50px;
+        padding-top: 70px;
+    }
+    .qhack-reasons__item--left .qhack-reasons__card,
+    .qhack-reasons__item--right .qhack-reasons__card {
+        width: calc(100% - 80px);
+        max-width: none;
+        padding: 40px 40px 40px 40px;
+    }
+    .qhack-reasons__card-body {
+        max-width: 100%;
+    }
+    .qhack-reasons__item--left .qhack-reasons__card-body,
+    .qhack-reasons__item--right .qhack-reasons__card-body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .qhack-reasons__number {
+        font-size: 44px;
+        letter-spacing: 1.76px;
+    }
+    .qhack-reasons__number::before {
+        font-size: 44px;
+        letter-spacing: 1.76px;
+    }
+    .qhack-reasons__card-header {
+        gap: 16px;
+    }
+    .qhack-reasons__card-title {
+        font-size: 18px;
+        letter-spacing: 0.72px;
+    }
+    .qhack-reasons__card-text {
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: 0.6px;
+    }
+    .qhack-reasons__card-text br {
+        display: none;
+    }
+    .qhack-reasons__item-image {
+        width: 120px;
+    }
+    .qhack-reasons__item--left .qhack-reasons__item-image {
+        left: auto;
+        right: 100px; /* カード右端から100px内側 */
+        top: 10px;
+    }
+    .qhack-reasons__item--right .qhack-reasons__item-image {
+        right: auto;
+        left: 100px; /* カード左端から100px内側 */
+        top: 10px;
+    }
+    .qhack-reasons__list li {
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: 0.6px;
+    }
 }

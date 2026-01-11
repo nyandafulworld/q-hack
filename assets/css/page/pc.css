@@ -18,15 +18,17 @@
 /* Q HACK 課題解決セクション - PC */
 .qhack-merit__title {
     font-size: 36px;
-    margin-bottom: 4px;
+    margin-bottom: 0;
 }
 
 .qhack-merit__challenges {
     gap: 16px;
+    max-width: 1200px;
 }
 
 .qhack-merit__challenge {
-    width: 360px;
+    width: calc(33.333% - 11px);
+    min-width: 360px;
     height: 95px;
     padding: 12px 32px;
 }

@@ -1,7 +1,6 @@
 @charset 'UTF-8';
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap');
+/* Google Fonts は header.php で直接読み込み済み */
 
 /*
 css
@@ -263,7 +262,9 @@ body.admin-bar {
 
 /* 無料相談ボタン */
 .qhack-cta-btn--contact {
-    background: var(--qhack-gradient);
+    background: linear-gradient(90deg, #FF3D3B -5%, #B701F7 105%);
+    background-origin: border-box;
+    background-clip: padding-box;
     border: 2px solid transparent;
 }
 
@@ -335,6 +336,575 @@ body.admin-bar {
 }
 
 /* ===== /Q HACK JAPAN CTAセクション ===== */
+
+/* ===== Q HACK JAPAN 選ばれる理由セクション ===== */
+.qhack-reasons {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+/* 背景SVG */
+.qhack-reasons__bg {
+    position: absolute;
+    top: 100px; /* セクション上端との余白 */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.qhack-reasons__bg svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.qhack-reasons__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 200px 0 120px;
+}
+
+.qhack-reasons__header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 40px;
+}
+
+.qhack-reasons__title {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.qhack-reasons__subtitle {
+    color: #313131;
+    text-align: center;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    margin: 0;
+    margin-top: 0;
+}
+
+.qhack-reasons__description {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 0 40px;
+}
+
+.qhack-reasons__description p {
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.88px;
+    margin: 0;
+}
+
+.qhack-reasons__highlight {
+    color: #B701F7;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1.04px;
+}
+
+/* 理由カードアイテム - 各itemは画面幅いっぱいに広がる */
+.qhack-reasons__item {
+    position: relative;
+    margin-bottom: 60px;
+    padding-top: 80px; /* 画像がはみ出す分のスペース */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.qhack-reasons__item:last-child {
+    margin-bottom: 0;
+}
+
+/* 左寄せカード (01, 03) - 画面左端から始まる */
+.qhack-reasons__item--left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.qhack-reasons__item--left .qhack-reasons__card {
+    width: calc(50% + 400px);
+    max-width: calc(100% - 200px);
+    min-height: auto;
+    border-radius: 0 20px 20px 0;
+    background: #FFF;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 50px 80px 50px 60px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* 右寄せカード (02, 04) - 画面右端まで伸びる */
+.qhack-reasons__item--right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.qhack-reasons__item--right .qhack-reasons__card {
+    width: calc(50% + 400px);
+    max-width: calc(100% - 200px);
+    min-height: auto;
+    border-radius: 20px 0 0 20px;
+    background: #FFF;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 50px 60px 50px 80px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* カードボディ - コンテンツ幅を制限 */
+.qhack-reasons__card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* 左寄せカード内のカードボディは右寄せ */
+.qhack-reasons__item--left .qhack-reasons__card-body {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* 右寄せカード内のカードボディは左寄せ */
+.qhack-reasons__item--right .qhack-reasons__card-body {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.qhack-reasons__card-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 数字 - ボーダーのみ（塗りなし）グラデーション */
+.qhack-reasons__number {
+    position: relative;
+    text-align: center;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke: 2px;
+    background: linear-gradient(180deg, #B701F7 0%, #FF3D3B 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    flex-shrink: 0;
+}
+
+/* 塗りを白で上書きして、ストロークのみ見えるようにする */
+.qhack-reasons__number::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFF;
+    -webkit-text-stroke: 0;
+    background: none;
+    z-index: 1;
+}
+
+.qhack-reasons__card-title {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    margin: 0;
+}
+
+.qhack-reasons__card-text {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.64px;
+    margin: 0;
+}
+
+.qhack-reasons__text-strong {
+    color: #B701F7;
+    font-weight: 700;
+}
+
+/* カード外の画像（白背景先端上部にはみ出す） */
+.qhack-reasons__item-image {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    margin: 0;
+    z-index: 2;
+}
+
+.qhack-reasons__item-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* 左寄せカードの画像位置（カードの右端から半分はみ出す） */
+.qhack-reasons__item--left .qhack-reasons__item-image {
+    right: auto;
+    left: calc(50% + 400px - 70px); /* カードの右端から画像の半分(70px)がはみ出す */
+    top: 10px; /* 白背景カードの上端からはみ出す */
+}
+
+/* 右寄せカードの画像位置（カードの左端から半分はみ出す） */
+.qhack-reasons__item--right .qhack-reasons__item-image {
+    left: auto;
+    right: calc(50% + 400px - 70px); /* カードの左端から画像の半分(70px)がはみ出す */
+    top: 10px; /* 白背景カードの上端からはみ出す */
+}
+
+/* リストスタイル */
+.qhack-reasons__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 16px;
+}
+
+.qhack-reasons__list li {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.64px;
+    position: relative;
+    padding-left: 16px;
+}
+
+.qhack-reasons__list li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+    color: #313131;
+}
+
+/* ===== /Q HACK JAPAN 選ばれる理由セクション ===== */
+
+/* ===== Q HACK JAPAN サポートセクション ===== */
+.qhack-support {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 100px 20px 120px;
+    background: #FFF;
+    box-sizing: border-box;
+}
+
+.qhack-support__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.qhack-support__header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.qhack-support__title {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.qhack-support__subtitle {
+    color: #313131;
+    text-align: center;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    margin: 0;
+}
+
+.qhack-support__description {
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    margin: 0 0 60px;
+}
+
+.qhack-support__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* 左右のテキストフレームコンテナ */
+.qhack-support__left,
+.qhack-support__right {
+    display: flex;
+    width: 269px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
+}
+
+/* 各テキストフレーム */
+.qhack-support__item {
+    display: flex;
+    height: 158px;
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+    align-self: stretch;
+    border-bottom: 1px solid #D9D9D9;
+    box-sizing: border-box;
+}
+
+.qhack-support__item--no-border {
+    border-bottom: none;
+    height: auto;
+}
+
+.qhack-support__item-title {
+    align-self: stretch;
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    margin: 0;
+}
+
+.qhack-support__item-list {
+    align-self: stretch;
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.72px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.qhack-support__item-list li {
+    position: relative;
+    padding-left: 16px;
+}
+
+.qhack-support__item-list li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+    color: #313131;
+}
+
+/* 中央の画像 */
+.qhack-support__center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    max-width: 500px;
+}
+
+.qhack-support__center img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ===== /Q HACK JAPAN サポートセクション ===== */
+
+/* ===== Q HACK JAPAN サービスセクション ===== */
+.qhack-service {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 100px 20px 120px;
+    background: #FFF;
+    box-sizing: border-box;
+}
+
+.qhack-service__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.qhack-service__header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.qhack-service__title {
+    color: #313131;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.qhack-service__subtitle {
+    color: #313131;
+    text-align: center;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    margin: 0;
+}
+
+.qhack-service__cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.qhack-service__card {
+    position: relative;
+    width: 360px;
+    height: 492px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* グラデーションボーダー */
+.qhack-service__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(180deg, #B701F7 0%, #FF3D3B 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.qhack-service__card-image {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qhack-service__card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.qhack-service__card-title {
+    color: #313131;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.88px;
+    margin: 0;
+}
+
+/* ===== /Q HACK JAPAN サービスセクション ===== */
 
 /* ヘッダーナビゲーション */
 .qhack-header__nav {
@@ -568,6 +1138,19 @@ body.admin-bar #body_wrap {
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 1.04px;
+}
+
+/* 強調数字 */
+.qhack-intro__number {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.04px;
+}
+
+/* 単位（円、億円、万円）を通常サイズに */
+.qhack-intro__unit {
+    font-size: 22px;
+    font-weight: 700;
 }
 
 /* CTAボタン */

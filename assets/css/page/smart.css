@@ -137,7 +137,7 @@ h2.ttl03 span{
 .qhack-merit__title {
     font-size: 22px;
     letter-spacing: 0.8px;
-    margin-bottom: 4px;
+    margin-bottom: 0;
 }
 
 .qhack-merit__subtitle {
@@ -226,12 +226,12 @@ h2.ttl03 span{
 }
 
 .qhack-merit__pagination-btn {
-    width: 44px;
-    height: 44px;
+    width: auto;
+    height: auto;
 }
 
 .qhack-merit__pagination-btn img {
-    width: 44px;
+    width: auto;
     height: 44px;
 }
 

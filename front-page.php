@@ -58,7 +58,7 @@
                 </div>
                 <div class="qhack-intro__content">
                     <p>株式会社Qハックジャパンは、「Qoo10で本気で売上を伸ばしたい店舗様」<br>のための<span class="qhack-intro__highlight">成果直結型</span>・Qoo10専門支援会社です。</p>
-                    <p>韓国コスメを<span class="qhack-intro__number">0円</span>から年商<span class="qhack-intro__number">2.5億円</span>へ、アパレルを月商<span class="qhack-intro__number">400万円</span>から<span class="qhack-intro__number">3,000万円</span><br>へ成長させるなど、立ち上げから既存店改善まで豊富な実績があります。</p>
+                    <p>韓国コスメを<span class="qhack-intro__number">0<span class="qhack-intro__unit">円</span></span>から年商<span class="qhack-intro__number">2.5<span class="qhack-intro__unit">億円</span></span>へ、アパレルを月商<span class="qhack-intro__number">400<span class="qhack-intro__unit">万円</span></span>から<span class="qhack-intro__number">3,000<span class="qhack-intro__unit">万円</span></span><br>へ成長させるなど、立ち上げから既存店改善まで豊富な実績があります。</p>
                     <p>出店、SEO、広告、デザイン、メガ割対策まで<br>「<span class="qhack-intro__highlight">戦略×運用×デザイン×PR</span>」を一気通貫で支援。<br>大企業だけでなく、小規模ブランドの育成実績も多く、<br>少ない予算でも成長シナリオを設計可能です。</p>
                     <p>メガ割対策や広告最適化、導線設計など、<br>データと現場感に基づく運用で売上最大化を実現します。<br>Qoo10の運用にお悩みの方は是非一度無料相談にお申し込みください。</p>
                 </div>
@@ -210,23 +210,23 @@
                             </div>
                         </div>
                     </div>
-                    <!-- ページネーション -->
-                    <div class="qhack-merit__pagination">
-                        <button class="qhack-merit__pagination-btn qhack-merit__pagination-btn--prev" aria-label="前のスライド">
-                            <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/button-1.png' ) ); ?>" alt="">
-                        </button>
-                        <div class="qhack-merit__pagination-dots">
-                            <span class="qhack-merit__pagination-dot active" data-index="0"></span>
-                            <span class="qhack-merit__pagination-dot" data-index="1"></span>
-                            <span class="qhack-merit__pagination-dot" data-index="2"></span>
-                            <span class="qhack-merit__pagination-dot" data-index="3"></span>
-                            <span class="qhack-merit__pagination-dot" data-index="4"></span>
-                            <span class="qhack-merit__pagination-dot" data-index="5"></span>
-                        </div>
-                        <button class="qhack-merit__pagination-btn qhack-merit__pagination-btn--next" aria-label="次のスライド">
-                            <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/button-2.png' ) ); ?>" alt="">
-                        </button>
+                </div>
+                <!-- ページネーション -->
+                <div class="qhack-merit__pagination">
+                    <button class="qhack-merit__pagination-btn qhack-merit__pagination-btn--prev" aria-label="前のスライド">
+                        <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/button-1.png' ) ); ?>" alt="">
+                    </button>
+                    <div class="qhack-merit__pagination-dots">
+                        <span class="qhack-merit__pagination-dot active" data-index="0"></span>
+                        <span class="qhack-merit__pagination-dot" data-index="1"></span>
+                        <span class="qhack-merit__pagination-dot" data-index="2"></span>
+                        <span class="qhack-merit__pagination-dot" data-index="3"></span>
+                        <span class="qhack-merit__pagination-dot" data-index="4"></span>
+                        <span class="qhack-merit__pagination-dot" data-index="5"></span>
                     </div>
+                    <button class="qhack-merit__pagination-btn qhack-merit__pagination-btn--next" aria-label="次のスライド">
+                        <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/button-2.png' ) ); ?>" alt="">
+                    </button>
                 </div>
                 <!-- /スライダー -->
 
@@ -247,7 +247,7 @@
         <section class="qhack-cta-section">
             <div class="qhack-cta-section__inner">
                 <div class="qhack-cta-section__box">
-                    <h2 class="qhack-cta-section__title">Qoo10運用代行に関するお問い合わせはこちらから</h2>
+                    <p class="qhack-cta-section__title">Qoo10運用代行に関するお問い合わせはこちらから</p>
                     <div class="qhack-cta-section__buttons">
                         <a href="<?php echo esc_url( home_url( '/document/' ) ); ?>" class="qhack-cta-btn qhack-cta-btn--document">
                             <span class="qhack-cta-btn__sub">Qoo10攻略のコツ！</span>
@@ -262,6 +262,216 @@
             </div>
         </section>
         <!-- /Q HACK JAPAN CTAセクション -->
+
+        <!-- Q HACK JAPAN 選ばれる理由セクション -->
+        <section class="qhack-reasons">
+            <!-- 背景SVG -->
+            <div class="qhack-reasons__bg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2753" preserveAspectRatio="none" fill="none">
+                    <path d="M1920 204.55C1151 -165.91 319.583 50.1919 0 204.55V2950H1920V204.55Z" fill="url(#paint0_reasons)"/>
+                    <defs>
+                        <linearGradient id="paint0_reasons" x1="1920" y1="1475" x2="0" y2="1475" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FBEEFF"/>
+                            <stop offset="1" stop-color="#FFDEDE"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="qhack-reasons__inner">
+                <div class="qhack-reasons__header">
+                    <h2 class="qhack-reasons__title">Qハックジャパンが選ばれる理由</h2>
+                    <p class="qhack-reasons__subtitle">REASONS</p>
+                </div>
+                <div class="qhack-reasons__description">
+                    <p>数あるEC運用代行の中で、なぜ多くの企業がQハックジャパンを選ぶのか？<br>
+                    それは<span class="qhack-reasons__highlight">「Qoo10に特化した深い知見」</span>と<span class="qhack-reasons__highlight">「成果に直結する実行力」</span>にあります。<br>
+                    戦略も分析もデザインも、「Qoo10のためだけに磨かれたノウハウ」です。</p>
+                </div>
+
+                <!-- 理由01 -->
+                <div class="qhack-reasons__item qhack-reasons__item--left">
+                    <figure class="qhack-reasons__item-image">
+                        <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/reason-1.png' ) ); ?>" alt="Qoo10特化チームによる専門サポート" loading="lazy">
+                    </figure>
+                    <div class="qhack-reasons__card">
+                        <div class="qhack-reasons__card-body">
+                            <div class="qhack-reasons__card-header">
+                                <span class="qhack-reasons__number" data-text="01">01</span>
+                                <h3 class="qhack-reasons__card-title">Qoo10特化チームによる専門サポート</h3>
+                            </div>
+                            <p class="qhack-reasons__card-text">Qoo10のアルゴリズム・広告仕様・出店ルールに精通した専任スタッフが対応。<br>
+                            Qoo10独自のロジックを理解した専門チームが、<br>
+                            戦略設計から運用・改善まで一気通貫で支援します。<br>
+                            楽天やAmazonとの兼任が多い中、Qハックジャパンは<span class="qhack-reasons__text-strong">Qoo10特化</span>。<br>
+                            日々変化する仕様にも即対応できる、<span class="qhack-reasons__text-strong">現場密着の運用力</span>が強みです。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 理由02 -->
+                <div class="qhack-reasons__item qhack-reasons__item--right">
+                    <figure class="qhack-reasons__item-image">
+                        <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/reason-2.png' ) ); ?>" alt="売上改善の実績多数" loading="lazy">
+                    </figure>
+                    <div class="qhack-reasons__card">
+                        <div class="qhack-reasons__card-body">
+                            <div class="qhack-reasons__card-header">
+                                <span class="qhack-reasons__number" data-text="02">02</span>
+                                <h3 class="qhack-reasons__card-title">売上改善の実績多数</h3>
+                            </div>
+                            <p class="qhack-reasons__card-text">これまでに100店舗以上の支援実績を誇り、平均売上アップ率は233％。<br>
+                            Qoo10総合ランキング10位以内に入るような大手ブランドも複数支援しております。<br>
+                            メガ割やシーズンキャンペーンを軸に、短期間で成果を出すノウハウを蓄積しています。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 理由03 -->
+                <div class="qhack-reasons__item qhack-reasons__item--left">
+                    <figure class="qhack-reasons__item-image">
+                        <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/reason-3.png' ) ); ?>" alt="スピード対応×密なコミュニケーション" loading="lazy">
+                    </figure>
+                    <div class="qhack-reasons__card">
+                        <div class="qhack-reasons__card-body">
+                            <div class="qhack-reasons__card-header">
+                                <span class="qhack-reasons__number" data-text="03">03</span>
+                                <h3 class="qhack-reasons__card-title">スピード対応 × 密なコミュニケーション</h3>
+                            </div>
+                            <p class="qhack-reasons__card-text">Qoo10はトレンドやアルゴリズムの変化が早く、決断と行動の速さが成果を左右します。<br>
+                            Qハックジャパンでは専任ディレクターが担当制で伴走。<br>
+                            チャットやZoomで密に連携し、施策の相談から改善までをスピーディーに実行。<br>
+                            「レスが遅い」「動きが見えない」と感じていた企業様の乗り換え先に選ばれています。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 理由04 -->
+                <div class="qhack-reasons__item qhack-reasons__item--right">
+                    <figure class="qhack-reasons__item-image">
+                        <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/reason-4.png' ) ); ?>" alt="Qoo10外でのマーケティング含めて一気通貫で支援可能" loading="lazy">
+                    </figure>
+                    <div class="qhack-reasons__card">
+                        <div class="qhack-reasons__card-body">
+                            <div class="qhack-reasons__card-header">
+                                <span class="qhack-reasons__number" data-text="04">04</span>
+                                <h3 class="qhack-reasons__card-title">Qoo10外でのマーケティング含めて一気通貫で支援可能</h3>
+                            </div>
+                            <ul class="qhack-reasons__list">
+                                <li>インフルエンサーアサイン</li>
+                                <li>ギフティング</li>
+                                <li>広告運用（TikTok、Meta、X）</li>
+                                <li>SNSのアカウント運用</li>
+                            </ul>
+                            <p class="qhack-reasons__card-text">など、マーケティングに必要なノウハウを網羅し、最適なサポートをします。</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /Q HACK JAPAN 選ばれる理由セクション -->
+
+        <!-- Q HACK JAPAN サポートセクション -->
+        <section class="qhack-support">
+            <div class="qhack-support__inner">
+                <div class="qhack-support__header">
+                    <h2 class="qhack-support__title">貴社のQoo10課題に合わせて柔軟にサポート</h2>
+                    <p class="qhack-support__subtitle">SUPPORT</p>
+                </div>
+                <p class="qhack-support__description">
+                    戦略立案から日々の運用、クリエイティブ制作まで。あらゆる業務をワンストップで支援します！
+                </p>
+                <div class="qhack-support__content">
+                    <!-- 左側テキストフレーム -->
+                    <div class="qhack-support__left">
+                        <div class="qhack-support__item">
+                            <h3 class="qhack-support__item-title">メガ割対策</h3>
+                            <ul class="qhack-support__item-list">
+                                <li>イベント戦略立案</li>
+                                <li>セール申請</li>
+                                <li>広告最適化</li>
+                            </ul>
+                        </div>
+                        <div class="qhack-support__item">
+                            <h3 class="qhack-support__item-title">SEO対策</h3>
+                            <ul class="qhack-support__item-list">
+                                <li>商品化最適化</li>
+                                <li>検索キーワード分析</li>
+                                <li>サジェスト対策</li>
+                            </ul>
+                        </div>
+                        <div class="qhack-support__item qhack-support__item--no-border">
+                            <h3 class="qhack-support__item-title">MOVE活用支援</h3>
+                            <ul class="qhack-support__item-list">
+                                <li>ショート動画の企画</li>
+                                <li>投稿サポート</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 中央画像 -->
+                    <figure class="qhack-support__center">
+                        <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/support-7.png' ) ); ?>" alt="Qoo10売上最大化" loading="lazy">
+                    </figure>
+                    <!-- 右側テキストフレーム -->
+                    <div class="qhack-support__right">
+                        <div class="qhack-support__item">
+                            <h3 class="qhack-support__item-title">広告運用代行</h3>
+                            <ul class="qhack-support__item-list">
+                                <li>共同広告</li>
+                                <li>キーワード広告</li>
+                                <li>タイムセール広告の最適化</li>
+                            </ul>
+                        </div>
+                        <div class="qhack-support__item">
+                            <h3 class="qhack-support__item-title">商品ページ制作</h3>
+                            <ul class="qhack-support__item-list">
+                                <li>転換率を高めるLPデザイン</li>
+                                <li>動画コンテンツ企画/制作</li>
+                            </ul>
+                        </div>
+                        <div class="qhack-support__item qhack-support__item--no-border">
+                            <h3 class="qhack-support__item-title">分析・レポーティング</h3>
+                            <ul class="qhack-support__item-list">
+                                <li>定期的なデータ分析</li>
+                                <li>改善提案</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Q HACK JAPAN サポートセクション -->
+
+        <!-- Q HACK JAPAN サービスセクション -->
+        <section class="qhack-service">
+            <div class="qhack-service__inner">
+                <div class="qhack-service__header">
+                    <h2 class="qhack-service__title">サービス</h2>
+                    <p class="qhack-service__subtitle">SERVISE</p>
+                </div>
+                <div class="qhack-service__cards">
+                    <div class="qhack-service__card">
+                        <figure class="qhack-service__card-image">
+                            <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/survice-1.png' ) ); ?>" alt="Qoo10コンサルティング" loading="lazy">
+                        </figure>
+                        <h3 class="qhack-service__card-title">Qoo10コンサルティング</h3>
+                    </div>
+                    <div class="qhack-service__card">
+                        <figure class="qhack-service__card-image">
+                            <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/survice-1.png' ) ); ?>" alt="Qoo10コンサルティング" loading="lazy">
+                        </figure>
+                        <h3 class="qhack-service__card-title">Qoo10コンサルティング</h3>
+                    </div>
+                    <div class="qhack-service__card">
+                        <figure class="qhack-service__card-image">
+                            <img src="<?php echo esc_url( home_url( '/wp-content/uploads/2026/01/survice-1.png' ) ); ?>" alt="Qoo10コンサルティング" loading="lazy">
+                        </figure>
+                        <h3 class="qhack-service__card-title">Qoo10コンサルティング</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Q HACK JAPAN サービスセクション -->
 
     </article>
 </main>
@@ -290,9 +500,11 @@
 
             var $track = $slider.find('.qhack-merit__slider-track');
             var $slides = $slider.find('.qhack-merit__slide');
-            var $dots = $slider.find('.qhack-merit__pagination-dot');
-            var $prevBtn = $slider.find('.qhack-merit__pagination-btn--prev');
-            var $nextBtn = $slider.find('.qhack-merit__pagination-btn--next');
+            // ページネーションはスライダーの外にあるため、親要素から検索
+            var $meritSection = $slider.closest('.qhack-merit__inner');
+            var $dots = $meritSection.find('.qhack-merit__pagination-dot');
+            var $prevBtn = $meritSection.find('.qhack-merit__pagination-btn--prev');
+            var $nextBtn = $meritSection.find('.qhack-merit__pagination-btn--next');
             
             console.log('Track found:', $track.length);
             console.log('Slides found:', $slides.length);
